@@ -1,4 +1,15 @@
-site_name: My Docs
+site_name: BerEditor
+site_url: https://jykim.github.io/bereditor_manual
+site_description: BerEditor Manual
+site_author: JayKim
 
 theme:
   name: readthedocs
+  analytics:
+    gtag: G-287S0CKBNS
+
+nav:
+ - Home: index.md
+ - Getting Started: get_start.md
+ - User Guide:
+   - Main UI : user_guide/main_ui.md
