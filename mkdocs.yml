@@ -12,4 +12,5 @@ nav:
  - Home: index.md
  - Getting Started: get_start.md
  - User Guide:
-   - Main UI : user_guide/main_ui.md
+   - Main UI: user_guide/main_ui.md
+   - Menu: user_guide/menu.md
