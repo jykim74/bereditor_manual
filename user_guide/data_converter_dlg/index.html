@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/data_converter_dlg/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Data Converter - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Data Converter";
+        var mkdocs_page_input_path = "user_guide/data_converter_dlg.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/data_converter_dlg/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../main_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Data Converter</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dialog-controls">Dialog Controls</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#convert-data">Convert Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#load-a-file">Load a File</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-the-output-as-new-input">Use the Output as New Input</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#export-converted-data">Export Converted Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Data Converter</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="data-converter-dialog-guide">Data Converter Dialog Guide</h1>
+<p>The <strong>Data Converter</strong> converts data between text and common encoded representations. Open it from <strong>Tool &gt; Data Converter</strong>.</p>
+<p><img alt="Illustrative layout of the Data Converter dialog, based on the application UI definition." src="../../images/data_converter_dlg.png" /></p>
+<p><em>Figure 1. Data Converter dialog layout. This is an illustrative diagram based on the UI definition, not a screenshot of the running application.</em></p>
+<h3 id="screen-areas">Screen Areas</h3>
+<ol>
+<li><strong>Read File</strong> — Loads a file into the input area as hexadecimal data.</li>
+<li><strong>Input format and input area</strong> — Choose the format of the source data and enter or paste its value.</li>
+<li><strong>Input Len</strong> — Shows the length calculated using the selected input format.</li>
+<li><strong>Conversion</strong> — Converts the source bytes to the selected output format.</li>
+<li><strong>Conversion Format</strong> — Selects the output representation. <strong>Show printable text</strong> is available when <strong>String</strong> is selected.</li>
+<li><strong>Export</strong> — Opens the export dialog for the converted bytes.</li>
+<li><strong>Up arrow</strong> — Moves the output into the input area and sets the input format to the selected output format.</li>
+<li><strong>Output / Hex Dump tabs</strong> — Show the converted text or a hexadecimal dump of its bytes.</li>
+<li><strong>Clear / Close</strong> — Clear input or output content, or close the dialog.</li>
+</ol>
+<h2 id="dialog-controls">Dialog Controls</h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read File</td>
+<td>Loads a file into the input area as hexadecimal data. Files larger than 1 MB are rejected.</td>
+</tr>
+<tr>
+<td>Input format</td>
+<td>Select how BerEditor should interpret the input: <strong>Hex</strong>, <strong>String</strong>, <strong>Base64</strong>, <strong>URL</strong>, or <strong>Base64URL</strong>.</td>
+</tr>
+<tr>
+<td>Input area</td>
+<td>Enter or paste the source data.</td>
+</tr>
+<tr>
+<td>Input Len</td>
+<td>Read-only length calculated using the selected input format.</td>
+</tr>
+<tr>
+<td>Clear (input)</td>
+<td>Clears the input area.</td>
+</tr>
+<tr>
+<td>Conversion</td>
+<td>Converts the input to the selected output format.</td>
+</tr>
+<tr>
+<td>Conversion Format</td>
+<td>Select the output representation: <strong>Hex</strong>, <strong>String</strong>, <strong>Base64</strong>, <strong>URL</strong>, or <strong>Base64URL</strong>.</td>
+</tr>
+<tr>
+<td>Show printable text</td>
+<td>For <strong>String</strong> output, displays printable characters where possible. This option is unavailable for other output formats.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td>Opens the export dialog to save the converted output as bytes.</td>
+</tr>
+<tr>
+<td>Up arrow</td>
+<td>Copies the current output into the input area and changes the input format to match the selected output format.</td>
+</tr>
+<tr>
+<td>Output Len</td>
+<td>Read-only length calculated using the selected output format.</td>
+</tr>
+<tr>
+<td>Output tab</td>
+<td>Displays the converted output.</td>
+</tr>
+<tr>
+<td>Hex Dump tab</td>
+<td>Displays the converted bytes in a hexadecimal dump with printable characters.</td>
+</tr>
+<tr>
+<td>Clear (output)</td>
+<td>Clears the output and hex dump.</td>
+</tr>
+<tr>
+<td>Close</td>
+<td>Closes the dialog.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="convert-data">Convert Data</h2>
+<ol>
+<li>Enter or paste data in the input area, or select <strong>Read File</strong> to load a file.</li>
+<li>Select the matching input format. For example, choose <strong>Hex</strong> for hexadecimal text or <strong>Base64</strong> for Base64 text.</li>
+<li>Select the desired <strong>Conversion Format</strong>.</li>
+<li>If the output format is <strong>String</strong>, optionally select <strong>Show printable text</strong>.</li>
+<li>Select <strong>Conversion</strong>.</li>
+<li>Review the result in the <strong>Output</strong> tab. Select <strong>Hex Dump</strong> to inspect the underlying bytes.</li>
+</ol>
+<p>The input and output length fields update as the text or format changes. If no input is provided, BerEditor asks you to enter a value. Invalid input for the selected format produces a format error.</p>
+<h2 id="load-a-file">Load a File</h2>
+<ol>
+<li>Select <strong>Read File</strong>.</li>
+<li>Choose a file in the file picker.</li>
+<li>BerEditor loads the file bytes into the input area as hexadecimal data and selects <strong>Hex</strong> as the input format.</li>
+<li>Choose an output format and select <strong>Conversion</strong>.</li>
+</ol>
+<p>The file loader accepts files up to 1 MB. Dragging a local file onto the dialog also loads its contents as hexadecimal input.</p>
+<h2 id="use-the-output-as-new-input">Use the Output as New Input</h2>
+<p>Select the up arrow beside the output format controls. The output text is copied to the input area, and the input format is set to the currently selected output format. The existing output and hex dump are cleared so you can perform another conversion.</p>
+<h2 id="export-converted-data">Export Converted Data</h2>
+<p>Select <strong>Export</strong> to open the export dialog for the converted output. Export is available when the output area contains data. The displayed output is decoded according to the selected output format before it is passed to the export dialog.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li><strong>URL</strong> and <strong>Base64URL</strong> are separate formats. Select the one that matches the input or desired output.</li>
+<li><strong>Show printable text</strong> changes String output rendering; it is disabled for other output formats.</li>
+<li>The <strong>Hex Dump</strong> view shows bytes in 16-byte rows and includes printable characters where available.</li>
+<li>The dialog's output format initially defaults to <strong>Base64</strong>.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../decode_data_dlg/" class="btn btn-neutral float-left" title="Decode Data"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../decode_data_dlg/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
