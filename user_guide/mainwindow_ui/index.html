@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/mainwindow_ui/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Main UI - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Main UI";
+        var mkdocs_page_input_path = "user_guide/mainwindow_ui.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/mainwindow_ui/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Main UI</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#main-window-layout">Main Window Layout</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#menus">Menus</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#typical-workflow">Typical Workflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#resizing-and-view-options">Resizing and View Options</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Main UI</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="bereditor-main-window-ui-guide">BerEditor Main Window UI Guide</h1>
+<p>This guide describes the main BerEditor window based on <code>src/BerEditor/mainwindow.cpp</code> and <code>src/BerEditor/mainwindow.h</code>.</p>
+<blockquote>
+<p><strong>Image note:</strong> The supplied file <code>images/mainwindow.png</code> currently shows the <strong>Data Converter</strong> dialog, not the BerEditor main window. It is included below as provided so the mismatch is visible. Replace it with a main-window capture when one is available.</p>
+</blockquote>
+<p><img alt="Image currently stored as mainwindow.png; it shows the Data Converter dialog rather than the main window." src="../../images/mainwindow.png" /></p>
+<p><em>Figure 1. The supplied image currently shows the Data Converter dialog. The main-window layout described below is based on the application source code.</em></p>
+<h2 id="main-window-layout">Main Window Layout</h2>
+<p>The main window is divided into a left BER tree pane and a right workspace. The right workspace has an upper data viewer and a lower information/log panel. Splitters let the user adjust the pane sizes.</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu bar</td>
+<td>Provides File, Edit, Tool, Cryptography, Service, Protocol, KMIP, Help, and View commands.</td>
+</tr>
+<tr>
+<td>Toolbars</td>
+<td>Optional toolbars provide shortcuts to commands from the menus. Which toolbars and buttons appear can be configured in View.</td>
+</tr>
+<tr>
+<td>BER tree (left)</td>
+<td>Displays the decoded BER structure as a navigable tree. Select a node to inspect its data and details.</td>
+</tr>
+<tr>
+<td>Data viewer (upper right)</td>
+<td>Shows the selected data in <strong>Hex</strong>, <strong>XML</strong>, <strong>Text</strong>, or <strong>JSON</strong> tabs. The Hex view is displayed as a table with an address, byte columns, and printable text.</td>
+</tr>
+<tr>
+<td>Information (lower right)</td>
+<td>Shows details about the currently selected node or data.</td>
+</tr>
+<tr>
+<td>Log (lower right)</td>
+<td>Shows application messages and operation output.</td>
+</tr>
+<tr>
+<td>Status bar</td>
+<td>Displays status information when an operation provides it.</td>
+</tr>
+</tbody>
+</table>
+<p>Some data-view tabs and the Log tab may be unavailable depending on license status. The exact presentation can also vary by platform and window size.</p>
+<h2 id="menus">Menus</h2>
+<table>
+<thead>
+<tr>
+<th>Menu</th>
+<th>Main purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>File</strong></td>
+<td>Create a new window; open BER, certificate, CRL, CSR, key, or CMS data; save; view recent files; print; and quit.</td>
+</tr>
+<tr>
+<td><strong>Edit</strong></td>
+<td>Copy selected information as-is, Hex, or Base64; expand or collapse tree nodes; navigate between nodes; and find a node.</td>
+</tr>
+<tr>
+<td><strong>Tool</strong></td>
+<td>Decode BER; convert data or numbers; inspect OIDs; create or check BER; retrieve BER from a URI; compare BER; and open binary/text views.</td>
+</tr>
+<tr>
+<td><strong>Cryptography</strong></td>
+<td>Manage keys and perform hash, MAC, encryption, signature, key agreement, PKCS#7, secret sharing, certificate path validation, OTP, VID, and big-number operations.</td>
+</tr>
+<tr>
+<td><strong>Service</strong></td>
+<td>Manage key pairs, certificates, and keys; check SSL/TLS; compare X.509 certificates; sign documents; and access CAVP tools. PDF signing appears when enabled in the build.</td>
+</tr>
+<tr>
+<td><strong>Protocol</strong></td>
+<td>Open clients for OCSP, TSP, CMP, SCEP, ACME, and EST.</td>
+</tr>
+<tr>
+<td><strong>KMIP</strong></td>
+<td>Decode, create, encode, or send KMIP TTLV messages.</td>
+</tr>
+<tr>
+<td><strong>Help</strong></td>
+<td>Configure settings; clear or pause logging; open PKI content, license information, support links, and About information.</td>
+</tr>
+<tr>
+<td><strong>View</strong></td>
+<td>Configure which toolbar actions are shown and restore the default view configuration.</td>
+</tr>
+</tbody>
+</table>
+<p>For the full command list and shortcuts, see <a href="MENU_EN.md">Menu Guide</a>.</p>
+<h2 id="typical-workflow">Typical Workflow</h2>
+<ol>
+<li>Use <strong>File &gt; Open...</strong> to open a BER file, or choose the appropriate specialized open command for a certificate, CRL, CSR, key, or CMS file.</li>
+<li>Select a node in the BER tree on the left.</li>
+<li>Inspect the selected data in the Hex, XML, Text, or JSON viewer tabs on the right.</li>
+<li>Read node details in <strong>Information</strong> and operation messages in <strong>Log</strong>.</li>
+<li>Use <strong>File &gt; Save</strong> or <strong>File &gt; Save As...</strong> when you need to save the current BER data.</li>
+</ol>
+<h2 id="resizing-and-view-options">Resizing and View Options</h2>
+<ul>
+<li>Drag the divider between the tree and right workspace to change their relative widths.</li>
+<li>Drag the divider between the upper data viewer and lower Information/Log panel to change their heights.</li>
+<li>Use the <strong>View</strong> menu to show or hide toolbar actions and <strong>Set Default</strong> to restore the configured default view.</li>
+<li>If an expected action or data tab is unavailable, check the license status and the current View configuration.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../get_start/" class="btn btn-neutral float-left" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../menu/" class="btn btn-neutral float-right" title="Menu">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../get_start/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../menu/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
