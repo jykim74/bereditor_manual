@@ -12,5 +12,7 @@ nav:
  - Home: index.md
  - Getting Started: get_start.md
  - User Guide:
-   - Main UI: user_guide/main_ui.md
+   - Main UI: user_guide/mainwindow_ui.md
    - Menu: user_guide/menu.md
+   - Decode Data: user_guide/decode_data_dlg.md
+   - Data Converter: user_guide/data_converter_dlg.md
