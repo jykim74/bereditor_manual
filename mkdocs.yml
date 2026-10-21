@@ -16,3 +16,5 @@ nav:
    - Menu: user_guide/menu.md
    - Decode Data: user_guide/decode_data_dlg.md
    - Data Converter: user_guide/data_converter_dlg.md
+   - Num Converter: user_guide/num_converter_dlg.md
+   - OID Information: user_guide/oid_info_dlg.md
