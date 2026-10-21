@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/num_converter_dlg/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Num Converter - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Num Converter";
+        var mkdocs_page_input_path = "user_guide/num_converter_dlg.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/num_converter_dlg/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Num Converter</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#convert-a-number">Convert a Number</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#input-formats">Input Formats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#clear-values">Clear Values</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Num Converter</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="number-converter-dialog-guide">Number Converter Dialog Guide</h1>
+<p>The <strong>Number Converter</strong> converts a number between binary, decimal, and hexadecimal representations. Open it from <strong>Tool &gt; Num Converter</strong>.</p>
+<p><img alt="Number Converter dialog with input type options and Binary, Decimal, and Hex output areas." src="../../images/num_converter.png" /></p>
+<p><em>Figure 1. Number Converter dialog. Enter a value at the top; the equivalent values appear in the three output sections below.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Number Type</strong> — Select the radix of the value entered in the input field: <strong>Bit</strong> (base 2), <strong>Decimal</strong> (base 10), or <strong>Hex</strong> (base 16). Decimal is selected by default.</li>
+<li><strong>Input field</strong> — Enter the value to convert. The placeholder indicates valid characters for the selected type.</li>
+<li><strong>Input Clear</strong> — Clears the input field.</li>
+<li><strong>Binary output</strong> — Shows the equivalent binary representation. Its length is shown in the small read-only field beside the up-arrow button.</li>
+<li><strong>Decimal output</strong> — Shows the equivalent decimal representation and its length.</li>
+<li><strong>Hex output</strong> — Shows the equivalent hexadecimal representation and its length.</li>
+<li><strong>Up-arrow buttons</strong> — Copy that section's value to the input field and select its matching input type, allowing conversion from that representation.</li>
+<li><strong>Output Clear</strong> — Clears all three converted values and their lengths.</li>
+<li><strong>Close</strong> — Closes the dialog.</li>
+</ol>
+<h2 id="convert-a-number">Convert a Number</h2>
+<ol>
+<li>Select the input <strong>Number Type</strong>.</li>
+<li>Enter a value in the input field.</li>
+<li>Read the equivalent values in the Binary, Decimal, and Hex sections. Conversion occurs as you type.</li>
+<li>To use one of the results as the next input, select the up-arrow button beside that result.</li>
+</ol>
+<h2 id="input-formats">Input Formats</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Valid digits</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bit</td>
+<td><code>0</code> and <code>1</code></td>
+<td><code>101101</code></td>
+</tr>
+<tr>
+<td>Decimal</td>
+<td>Decimal digits; a minus sign is supported for negative values</td>
+<td><code>45</code> or <code>-12</code></td>
+</tr>
+<tr>
+<td>Hex</td>
+<td><code>0</code>–<code>9</code>, <code>A</code>–<code>F</code>, or <code>a</code>–<code>f</code></td>
+<td><code>2D</code> or <code>a4</code></td>
+</tr>
+</tbody>
+</table>
+<p>Whitespace is removed before conversion. An invalid value triggers a warning. When entering hexadecimal with an odd number of digits, the converter pads a leading zero internally before decoding it.</p>
+<h2 id="clear-values">Clear Values</h2>
+<ul>
+<li>Select the top <strong>Clear</strong> button to clear the input field.</li>
+<li>Select the bottom <strong>Clear</strong> button to clear the Binary, Decimal, and Hex results.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../data_converter_dlg/" class="btn btn-neutral float-left" title="Data Converter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../data_converter_dlg/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
