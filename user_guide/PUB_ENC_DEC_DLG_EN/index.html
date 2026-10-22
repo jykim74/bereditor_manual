@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/PUB_ENC_DEC_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>PubKey Encrypt/Decrypt - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "PubKey Encrypt/Decrypt";
+        var mkdocs_page_input_path = "user_guide/PUB_ENC_DEC_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/PUB_ENC_DEC_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">PubKey Encrypt/Decrypt</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#encrypt-data">Encrypt Data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#decrypt-data">Decrypt Data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">PubKey Encrypt/Decrypt</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="public-key-encryptdecrypt-dialog-guide">Public-Key Encrypt/Decrypt Dialog Guide</h1>
+<p>The <strong>Public-Key Encrypt/Decrypt</strong> dialog encrypts data with a public key and decrypts it with the matching private key. It supports RSA, SM2, and ECDSA-based ECIES operations.</p>
+<p><img alt="Public-Key Encrypt/Decrypt dialog showing input data, key selection, ECIES parameters, operation controls, and output data." src="../../images/pub_enc_dec_dlg.png" /></p>
+<p><em>Figure 1. Public-Key Encrypt/Decrypt dialog. Choose an operation, provide the data and corresponding key, then run it to view the result.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Input Data</strong> — Enter the plaintext to encrypt or ciphertext to decrypt. Select its representation as <strong>Hex</strong>, <strong>String</strong>, or <strong>Base64</strong>. The dialog shows the input length; <strong>C</strong> clears the input.</li>
+<li><strong>Supported algorithms</strong> — RSA, SM2, and ECDSA. For ECDSA, this dialog uses ECIES encryption and decryption.</li>
+<li><strong>Key source</strong> — Use a key managed by <strong>KeyPairMan</strong> or enable <strong>Use CertMan</strong> to choose certificate/key material from CertMan. The required key depends on the selected operation.</li>
+<li><strong>Select each certificate and private key</strong> — Enable this option to specify a certificate or public-key file and a private-key file directly. Use <strong>Find</strong> to browse for a file. The adjacent <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> controls view information, decode the file in the main BerEditor window, and show the key type, respectively.</li>
+<li><strong>Encrypted PrivateKey / Password</strong> — Enable this when the selected private-key file is password protected, then enter its password. This applies when reading the private key for decryption.</li>
+<li><strong>ECIES parameters</strong> — <strong>IV</strong>, <strong>Tag</strong>, and the other <strong>PublicKey</strong> value carry the ECIES parameters. On encryption, the dialog generates these values; on decryption, provide the values associated with the ciphertext. Values are hexadecimal.</li>
+<li><strong>Encrypt / Decrypt</strong> — Select the operation. Encryption uses a public key; decryption uses the matching private key.</li>
+<li><strong>RSA scheme</strong> — Choose <strong>V15</strong> or <strong>OAEP</strong> for RSA. This setting does not select an SM2 or ECIES mode.</li>
+<li><strong>Encrypt / Decrypt button</strong> — Runs the selected operation. The button label follows the selected mode.</li>
+<li><strong>Output Data</strong> — Displays the result in the selected output representation (<strong>Hex</strong>, <strong>String</strong>, or <strong>Base64</strong>) and shows its length. <strong>C</strong> clears the result. The up-arrow copies the result into Input Data and sets the input representation to match the output.</li>
+<li><strong>Clear Data All</strong> — Clears the dialog's data and related values. <strong>Close</strong> closes the dialog.</li>
+</ol>
+<h2 id="encrypt-data">Encrypt Data</h2>
+<ol>
+<li>Select <strong>Encrypt</strong>.</li>
+<li>Enter the plaintext in <strong>Input Data</strong> and choose its representation.</li>
+<li>Choose the public key or certificate source. If using individual files, enable <strong>Select each certificate and private key</strong> and select the certificate or public-key file.</li>
+<li>For RSA, select <strong>V15</strong> or <strong>OAEP</strong>. For SM2 or ECDSA, use the appropriate public key; RSA scheme selection does not apply.</li>
+<li>Select <strong>Encrypt</strong>. The encrypted result appears in <strong>Output Data</strong>.</li>
+<li>For ECIES, record the generated <strong>IV</strong>, <strong>Tag</strong>, and other <strong>PublicKey</strong> value along with the ciphertext. Decryption requires these parameters.</li>
+</ol>
+<h2 id="decrypt-data">Decrypt Data</h2>
+<ol>
+<li>Select <strong>Decrypt</strong>.</li>
+<li>Enter the ciphertext and choose its representation.</li>
+<li>Select the corresponding private key. If it is password protected, enable <strong>Encrypted PrivateKey</strong> and enter the password.</li>
+<li>For RSA, select the same padding scheme used to encrypt the data. For ECIES, enter the associated <strong>IV</strong>, <strong>Tag</strong>, and other <strong>PublicKey</strong> values in hexadecimal.</li>
+<li>Select <strong>Decrypt</strong>. The plaintext appears in <strong>Output Data</strong>.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Encryption and decryption must use a matching public/private key pair and compatible algorithm parameters.</li>
+<li>Keep the ECIES parameters with the ciphertext; the ciphertext alone is insufficient for this dialog's ECIES decryption workflow.</li>
+<li>The output representation controls how the result is displayed, not the cryptographic operation. Use the up-arrow to pass a result back as input.</li>
+<li>The dialog warns when input data, a required key, or a required password is missing, or when the selected data cannot be decoded in the chosen representation.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../SIGN_VERIFY_DLG_EN/" class="btn btn-neutral float-left" title="Sign/Verify"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../KEY_AGREE_DLG_EN/" class="btn btn-neutral float-right" title="Key Agreement">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../SIGN_VERIFY_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../KEY_AGREE_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

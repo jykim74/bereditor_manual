@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/CERT_PVD_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Certificate Path Validation - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Certificate Path Validation";
+        var mkdocs_page_input_path = "user_guide/CERT_PVD_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/CERT_PVD_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Certificate Path Validation</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#build-a-certificate-path">Build a Certificate Path</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#validate-a-certificate-or-check-a-crl">Validate a Certificate or Check a CRL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verification-flags">Verification Flags</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">Certificate Path Validation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="certificate-path-validation-dialog-guide">Certificate Path Validation Dialog Guide</h1>
+<p>The <strong>Certificate Path Validation</strong> dialog helps build and inspect a certificate chain, validate a target certificate, check certificate policies, and verify CRLs. It can use certificates and CRLs selected from files or stored in BerEditor's CertMan lists.</p>
+<p><img alt="Certificate Path Validation dialog showing trust and untrusted certificate inputs, CRL, path list and tree tabs, validation flags, parameters, and target certificate controls." src="../../images/cert_pvd_dlg.png" /></p>
+<p><em>Figure 1. Certificate Path Validation dialog. Supply trust and revocation data, select a target certificate, then build or validate its certificate path.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Use TrustList / Trust List</strong> — Enable <strong>Use TrustList</strong> to validate against BerEditor's configured trust list. <strong>Trust List</strong> opens CertMan's root CA list. When disabled, provide a specific TrustCert file for the operation.</li>
+<li><strong>TrustCert, UntrustCert, and CRL</strong> — Select files with <strong>Find</strong> or choose entries from CertMan with <strong>Add</strong>. <strong>V</strong> opens certificate or CRL information; <strong>D</strong> decodes the selected file in BerEditor. TrustCert supplies trust anchors, UntrustCert supplies certificates treated as untrusted, and CRL supplies revocation information.</li>
+<li><strong>Include CertMan CA in UntrustCert</strong> — Includes CertMan CA certificates in the untrusted certificate input for path validation.</li>
+<li><strong>Path Clear / VerifyCRL / VerifyCert</strong> — <strong>Path Clear</strong> clears the displayed path. <strong>VerifyCRL</strong> checks a CRL against the selected trust or untrusted certificate. <strong>VerifyCert</strong> checks the selected certificate using the trust, untrusted, and optional CRL inputs.</li>
+<li><strong>At Time / Make Path / Clear</strong> — Enable <strong>At Time</strong> to use the selected date and time for path checks. <strong>Make Path</strong> builds a chain for the target certificate; <strong>Clear</strong> clears the path list and tree.</li>
+<li><strong>Path List / Path Tree</strong> — View the built chain as a table or hierarchical tree. Double-click an entry to view its details. Right-click for available item actions.</li>
+<li><strong>Flag Options</strong> — Configure certificate-path verification behavior, including CRL checking, policy checks, critical-extension handling, strict X.509 processing, time checks, partial chains, and trust-anchor selection. Use flags only when their validation behavior is intended.</li>
+<li><strong>Param</strong> — Add verification parameters such as <strong>Policy</strong>, <strong>Purpose</strong>, <strong>Name</strong>, <strong>Depth</strong>, <strong>AuthLevel</strong>, <strong>HostName</strong>, <strong>Email</strong>, and <strong>IP</strong>, with a corresponding value. <strong>Add</strong> appends the selected parameter; <strong>Clear</strong> removes the parameter list. Right-click table entries for item actions.</li>
+<li><strong>Certificate target</strong> — Select the target certificate with <strong>Find</strong> or <strong>L</strong> (select from CertMan). The subject DN appears in the adjacent field. <strong>V</strong> views certificate details and <strong>D</strong> decodes it in BerEditor.</li>
+<li><strong>Policy Check / Path Validation</strong> — Run a policy check or validate the target's certificate path using the selected inputs, flags, parameters, and time options. <strong>Include CertMan CRL in CRL</strong> adds CertMan CRLs to path validation.</li>
+<li><strong>Clear Data All / Close</strong> — Clear the dialog's inputs and results or close the dialog.</li>
+</ol>
+<h2 id="build-a-certificate-path">Build a Certificate Path</h2>
+<ol>
+<li>Select a target certificate using <strong>Find</strong> or <strong>L</strong>. The subject DN confirms the selected target.</li>
+<li>Enable <strong>Use TrustList</strong> to use the configured trust list, or select a <strong>TrustCert</strong> file for a specific trust anchor.</li>
+<li>Add any relevant <strong>UntrustCert</strong> certificates and <strong>CRL</strong> data. To use CertMan's stored CA or CRL data, enable the applicable inclusion option.</li>
+<li>If required, enable <strong>At Time</strong> and set the validation date and time. Configure any needed verification flags and parameters.</li>
+<li>Select <strong>Make Path</strong>. Review the resulting chain in <strong>Path List</strong> or <strong>Path Tree</strong>. When online CA/CRL retrieval is enabled in BerEditor settings, path construction may retrieve issuer or status data online.</li>
+</ol>
+<h2 id="validate-a-certificate-or-check-a-crl">Validate a Certificate or Check a CRL</h2>
+<ul>
+<li>To check the target certificate, select the certificate and configure the trust and revocation inputs, then select <strong>VerifyCert</strong>. Review the result reported in the log.</li>
+<li>To verify a CRL, provide a CRL and its issuing certificate as TrustCert or UntrustCert, then select <strong>VerifyCRL</strong>.</li>
+<li>To perform full path validation, select <strong>Path Validation</strong> after setting the target, trust data, optional CRLs, flags, parameters, and time. Use <strong>Policy Check</strong> when you want to check the configured certificate policy parameters.</li>
+</ul>
+<h2 id="verification-flags">Verification Flags</h2>
+<p>The dialog exposes these options (some may be below the visible area depending on window size):</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UseCheckTime</code> / <code>NoCheckTime</code> / <code>At Time</code></td>
+<td>Control certificate time evaluation and the selected validation time.</td>
+</tr>
+<tr>
+<td><code>CRLCheck</code> / <code>CRLCheckAll</code></td>
+<td>Enable CRL checking for certificates in the chain or throughout the chain.</td>
+</tr>
+<tr>
+<td><code>IgnoreCritical</code></td>
+<td>Ignore unrecognized critical extensions.</td>
+</tr>
+<tr>
+<td><code>X509Strict</code></td>
+<td>Apply stricter X.509 checks.</td>
+</tr>
+<tr>
+<td><code>PolicyCheck</code> / <code>ExplicitPolicy</code></td>
+<td>Enable policy processing and explicit policy requirements.</td>
+</tr>
+<tr>
+<td><code>InhibitAny</code> / <code>InhibitMap</code></td>
+<td>Restrict anyPolicy or policy mapping behavior.</td>
+</tr>
+<tr>
+<td><code>PartialChain</code></td>
+<td>Allow a chain to terminate at an intermediate certificate.</td>
+</tr>
+<tr>
+<td><code>TrustedFirst</code></td>
+<td>Prefer trusted certificates when building the chain.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>A successful path depends on a valid target certificate, suitable trust anchors, complete issuer certificates, and any required revocation data.</li>
+<li><strong>VerifyCert</strong>, <strong>VerifyCRL</strong>, <strong>Policy Check</strong>, and <strong>Path Validation</strong> are separate operations and report their results in BerEditor's message/log area.</li>
+<li>Online retrieval during <strong>Make Path</strong> follows the online CA/CRL setting configured in BerEditor.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../SSS_DLG_EN/" class="btn btn-neutral float-left" title="Shamir Secret Sharing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../GEN_OTP_DLG_EN/" class="btn btn-neutral float-right" title="OTP Generator">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../SSS_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../GEN_OTP_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

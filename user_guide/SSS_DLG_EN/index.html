@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/SSS_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Shamir Secret Sharing - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Shamir Secret Sharing";
+        var mkdocs_page_input_path = "user_guide/SSS_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/SSS_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Shamir Secret Sharing</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#split-a-secret">Split a Secret</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#join-shares">Join Shares</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">Shamir Secret Sharing</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="shamir-secret-sharing-dialog-guide">Shamir Secret Sharing Dialog Guide</h1>
+<p>The <strong>Shamir Secret Sharing [GF(256)]</strong> dialog splits a secret into shares and reconstructs it from a threshold number of shares. Use the same prime value and threshold settings when splitting and joining.</p>
+<p><img alt="Shamir Secret Sharing dialog showing share and threshold settings, prime controls, source input, share list, and joined result." src="../../images/sss_dlg.png" /></p>
+<p><em>Figure 1. Shamir Secret Sharing dialog. The upper section splits a source value into shares; the lower section combines selected shares to reconstruct the value.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Shares</strong> — Number of shares to create. The default is <code>5</code>.</li>
+<li><strong>Threshold</strong> — Minimum number of shares required to reconstruct the secret. The default is <code>3</code>.</li>
+<li><strong>Prime</strong> — Prime value used by the sharing operation, entered as hexadecimal. The selected <strong>Bytes</strong> value sets the size for <strong>Make Prime</strong>; available choices are 8, 16, 32, 64, 128, and 256 bytes. <strong>C</strong> clears the prime. <strong>IsPrime</strong> checks whether the entered value is prime.</li>
+<li><strong>Source</strong> — Secret value to split. Select its input representation (<strong>Hex</strong>, <strong>String</strong>, or <strong>Base64</strong>), enter the value, and select <strong>Split</strong>. <strong>C</strong> clears the source; the adjacent field shows its length.</li>
+<li><strong>Shared</strong> — Enter a share value in hexadecimal and select <strong>Add</strong> to append it to the share list. The adjacent field displays its length.</li>
+<li><strong>Shared value list</strong> — Shows the shares available for reconstruction. Right-click a row to copy or delete it. <strong>Clear</strong> removes all listed shares.</li>
+<li><strong>Join</strong> — Reconstructs the original secret from the listed shares using the configured threshold and prime.</li>
+<li><strong>Joined</strong> — Displays the reconstructed value using the selected representation (<strong>Hex</strong>, <strong>String</strong>, or <strong>Base64</strong>). <strong>C</strong> clears the result; the adjacent field shows its length.</li>
+<li><strong>Clear Data All / Close</strong> — Clears the values and share list, or closes the dialog.</li>
+</ol>
+<h2 id="split-a-secret">Split a Secret</h2>
+<ol>
+<li>Set <strong>Shares</strong> to the total number of shares to generate and <strong>Threshold</strong> to the minimum number needed to reconstruct the secret.</li>
+<li>Enter a prime in <strong>Prime</strong>, or choose a byte size and select <strong>Make Prime</strong>. Use <strong>IsPrime</strong> to check a manually entered value.</li>
+<li>Enter the secret in <strong>Source</strong> and select its representation.</li>
+<li>Select <strong>Split</strong>. The generated share values appear in the list. Save or copy the shares and keep the threshold and prime information available for reconstruction.</li>
+</ol>
+<h2 id="join-shares">Join Shares</h2>
+<ol>
+<li>Enter the same <strong>Prime</strong> and <strong>Threshold</strong> used for splitting.</li>
+<li>Add share values to the <strong>Shared</strong> field one at a time, selecting <strong>Add</strong> after each. Shares must be hexadecimal values.</li>
+<li>Add at least the threshold number of shares, then select <strong>Join</strong>.</li>
+<li>Read the reconstructed secret in <strong>Joined</strong> and choose the desired output representation.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The prime must be greater than the source value. An insufficient prime causes the split operation to fail.</li>
+<li>Reconstruction requires at least the configured threshold number of shares; the dialog also requires at least two shares in the list.</li>
+<li>Duplicate shares are rejected when adding them. Use the share list's right-click menu to copy or remove a share.</li>
+<li>Shares and the original secret are sensitive. Store shares separately and clear the dialog when finished.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../PKCS7_DLG_EN/" class="btn btn-neutral float-left" title="PKCS7"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../CERT_PVD_DLG_EN/" class="btn btn-neutral float-right" title="Certificate Path Validation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../PKCS7_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../CERT_PVD_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

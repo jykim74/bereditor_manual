@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/GEN_HASH_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Hash - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hash";
+        var mkdocs_page_input_path = "user_guide/GEN_HASH_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/GEN_HASH_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Hash</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calculate-a-digest-from-text">Calculate a Digest from Text</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calculate-a-digest-from-a-file">Calculate a Digest from a File</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#incremental-hashing">Incremental Hashing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">Hash</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hash-dialog-guide">Hash Dialog Guide</h1>
+<p>The <strong>Hash</strong> dialog calculates a digest for text or a file. Open it from <strong>Cryptography &gt; Hash</strong>.</p>
+<p><img alt="Hash dialog showing Input Data and Input File tabs, streaming status controls, algorithm selection, digest output, and Clear Data All." src="../../images/gen_hash_dlg.png" /></p>
+<p><em>Figure 1. Hash dialog on the Input Data tab. Select a source, choose a hash algorithm, and select Digest to calculate the digest.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Input Data / Input File</strong> — Choose whether to enter data directly or hash a file.</li>
+<li><strong>Input Type</strong> — Select how the input text is represented (for example, Hex, String, or Base64).</li>
+<li><strong>Input area / Input File controls</strong> — Enter text in Input Data, or select <strong>Find</strong> in Input File to choose a file. File mode displays file information, total and read sizes, and progress.</li>
+<li><strong>Init / Update / Final</strong> — Run a hash incrementally: initialize the selected algorithm, add the current input to the hash state, then finalize and display the digest. <strong>Reset</strong> clears the incremental operation status.</li>
+<li><strong>Status</strong> — Shows the state of the incremental operation.</li>
+<li><strong>Algorithm</strong> — Select the hash algorithm. The list is provided by the application and may depend on the build and crypto configuration.</li>
+<li><strong>Request length</strong> — Sets the output length for SHAKE128 or SHAKE256. It is disabled for fixed-length hash algorithms. The default is 32 bytes.</li>
+<li><strong>Digest</strong> — Calculates a one-shot digest for the selected input data or file.</li>
+<li><strong>Digest Value</strong> — Displays the digest in hexadecimal. Its <strong>Len</strong> field shows the output length. <strong>C</strong> clears the digest.</li>
+<li><strong>Clear Data All</strong> — Clears input, output, and status fields.</li>
+<li><strong>Close</strong> — Closes the dialog.</li>
+</ol>
+<h2 id="calculate-a-digest-from-text">Calculate a Digest from Text</h2>
+<ol>
+<li>Select <strong>Input Data</strong>.</li>
+<li>Choose the <strong>Input Type</strong> and enter or paste the data.</li>
+<li>Select a hash <strong>Algorithm</strong>.</li>
+<li>For SHAKE128 or SHAKE256, enter the desired <strong>Request length</strong> in bytes.</li>
+<li>Select <strong>Digest</strong>. The digest appears in hexadecimal in <strong>Digest Value</strong>.</li>
+</ol>
+<h2 id="calculate-a-digest-from-a-file">Calculate a Digest from a File</h2>
+<ol>
+<li>Select <strong>Input File</strong>.</li>
+<li>Select <strong>Find</strong> and choose a file.</li>
+<li>Review the file information and select the threading option if shown.</li>
+<li>Select <strong>Digest</strong> and wait for the progress indicator to complete.</li>
+</ol>
+<p>The dialog reads the file in blocks and updates the read size and progress. Large files can be processed without loading the entire file into the input text area.</p>
+<h2 id="incremental-hashing">Incremental Hashing</h2>
+<p>Use <strong>Init</strong>, <strong>Update</strong>, and <strong>Final</strong> when you want to feed data to the hash operation in stages:</p>
+<ol>
+<li>Select an algorithm and choose <strong>Init</strong>.</li>
+<li>Enter a data block and select <strong>Update</strong>. Repeat for additional blocks.</li>
+<li>Select <strong>Final</strong> to calculate and display the digest.</li>
+<li>Select <strong>Reset</strong> to clear the operation state before starting another sequence.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The input length and digest length are displayed automatically.</li>
+<li>Use the same algorithm and input bytes when reproducing or comparing a digest.</li>
+<li>An empty input is allowed for one-shot digest calculation; it produces the digest of the empty byte sequence.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../KEY_MAN_DLG_EN/" class="btn btn-neutral float-left" title="Key Manage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../GEN_MAC_DLG_EN/" class="btn btn-neutral float-right" title="Message Authentication Code">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../KEY_MAN_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../GEN_MAC_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

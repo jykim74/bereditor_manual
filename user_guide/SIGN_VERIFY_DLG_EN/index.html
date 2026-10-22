@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/SIGN_VERIFY_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Sign/Verify - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sign/Verify";
+        var mkdocs_page_input_path = "user_guide/SIGN_VERIFY_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/SIGN_VERIFY_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Sign/Verify</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sign-a-message">Sign a Message</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verify-a-signature">Verify a Signature</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sign-or-verify-a-digest">Sign or Verify a Digest</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#incremental-operations-and-notes">Incremental Operations and Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">Sign/Verify</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="signature-verify-dialog-guide">Signature / Verify Dialog Guide</h1>
+<p>The <strong>Signature / Verify</strong> dialog creates or verifies an asymmetric digital signature using input data or a file. Open it from <strong>Cryptography &gt; Sign/Verify</strong>.</p>
+<p><img alt="Signature and Verify dialog showing data/file tabs, certificate and private key selection, hash and RSA scheme options, Sign and Verify actions, and signature output." src="../../images/sign_verify_dlg.png" /></p>
+<p><em>Figure 1. Signature / Verify dialog. Select the data, signing key or verification certificate, algorithm options, and operation.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Use KeyPairMan key / Use CertMan</strong> — Select the key source used when the individual certificate/private-key file group is not enabled. The selected manager provides the required key or certificate.</li>
+<li><strong>Input Data / Input File</strong> — Enter message data directly or select a file to sign or verify.</li>
+<li><strong>Input Type / Input area</strong> — Select the representation (such as Hex, String, or Base64), enter the data, and review the calculated length. In file mode, use <strong>Find</strong> and monitor file information and progress.</li>
+<li><strong>Init / Update / Final / Reset</strong> — Perform signing or verification incrementally. Initialize with the chosen key, feed data blocks with Update, and complete the operation with Final.</li>
+<li><strong>Select each certificate and private key</strong> — Enable this group to select the key material from files rather than a key manager.</li>
+<li><strong>Cert or PubKey</strong> — Select a certificate or public key for verification. <strong>Find</strong> selects the file; <strong>V</strong> opens its details; <strong>D</strong> decodes it in BerEditor; <strong>T</strong> reports its key type.</li>
+<li><strong>PrivateKey</strong> — Select the private key for signing. <strong>Find</strong>, <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> provide file selection, details, BER decoding, and key-type information.</li>
+<li><strong>Encrypted PrivateKey / Password</strong> — Select this when the private-key file is encrypted, then enter its password.</li>
+<li><strong>Hash</strong> — Select a hash for RSA, ECDSA, DSA, and SM2 signatures. SM2 requires SM3.</li>
+<li><strong>RSA Signature schemes</strong> — Select the RSA signature scheme, such as V15 or PSS, when signing or verifying with RSA.</li>
+<li><strong>Sign / Verify</strong> — Select the operation. The run button changes to <strong>Sign</strong> or <strong>Verify</strong>.</li>
+<li><strong>SignDigest</strong> — Signs or verifies an already-computed digest. The input must have the selected hash's digest length; the dialog warns if the lengths differ.</li>
+<li><strong>Signature</strong> — Displays the generated signature in Hex when signing. For verification, enter the expected signature here as hexadecimal. The length is shown beside it.</li>
+<li><strong>Clear Data All / Close</strong> — Clears input, key paths, signature and status, or closes the dialog.</li>
+</ol>
+<h2 id="sign-a-message">Sign a Message</h2>
+<ol>
+<li>Select <strong>Input Data</strong> or <strong>Input File</strong> and provide the message.</li>
+<li>Select <strong>Sign</strong>.</li>
+<li>Choose a private key source:</li>
+<li>Use <strong>KeyPairMan key</strong> or <strong>CertMan</strong> from the top controls; or</li>
+<li>Enable <strong>Select each certificate and private key</strong>, then select a private key file. If it is encrypted, enable <strong>Encrypted PrivateKey</strong> and enter its password.</li>
+<li>Select the hash algorithm. For RSA, choose the RSA signature scheme as appropriate.</li>
+<li>Select <strong>Sign</strong>. The signature is displayed in hexadecimal.</li>
+</ol>
+<h2 id="verify-a-signature">Verify a Signature</h2>
+<ol>
+<li>Provide the same message data or file that was signed.</li>
+<li>Select <strong>Verify</strong>.</li>
+<li>Choose the public key source: a certificate or public key from the key manager, CertMan, or the file selection group.</li>
+<li>Choose the matching hash and RSA signature scheme.</li>
+<li>Enter the expected signature in the <strong>Signature</strong> field as hexadecimal.</li>
+<li>Select <strong>Verify</strong> and read the success or failure message.</li>
+</ol>
+<h2 id="sign-or-verify-a-digest">Sign or Verify a Digest</h2>
+<p>Select <strong>SignDigest</strong> to operate directly on a precomputed digest rather than hashing a message through the normal Sign/Verify path. Enter the digest in the input area using the selected input representation. The dialog checks its length against the selected hash and asks whether to continue if they differ.</p>
+<h2 id="incremental-operations-and-notes">Incremental Operations and Notes</h2>
+<ul>
+<li>Use <strong>Init</strong>, <strong>Update</strong>, and <strong>Final</strong> to process data in stages. Select <strong>Reset</strong> before starting another staged operation.</li>
+<li>The same message bytes, key pair, hash, and RSA signature scheme must be used for successful verification.</li>
+<li>SM2 uses SM3. If another hash is selected, BerEditor prompts to switch to SM3.</li>
+<li>Some key algorithms do not support the staged Init/Update/Final workflow. Use the one-shot <strong>Sign</strong> or <strong>Verify</strong> action when prompted.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../ENC_DEC_DLG_EN/" class="btn btn-neutral float-left" title="Encrypt/Decrypt"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../PUB_ENC_DEC_DLG_EN/" class="btn btn-neutral float-right" title="PubKey Encrypt/Decrypt">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../ENC_DEC_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../PUB_ENC_DEC_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

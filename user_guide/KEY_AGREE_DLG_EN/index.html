@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/KEY_AGREE_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Key Agreement - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Key Agreement";
+        var mkdocs_page_input_path = "user_guide/KEY_AGREE_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/KEY_AGREE_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Key Agreement</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calculate-a-dh-shared-secret">Calculate a DH Shared Secret</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calculate-an-ecdh-shared-secret">Calculate an ECDH Shared Secret</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#generate-and-import-parameters-or-keys">Generate and Import Parameters or Keys</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">Key Agreement</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="key-agreement-dialog-guide">Key Agreement Dialog Guide</h1>
+<p>The <strong>Key Agreement</strong> dialog calculates a shared secret using Diffie–Hellman (DH) or Elliptic Curve Diffie–Hellman (ECDH). It can also generate the parameters and key material used in the calculation.</p>
+<p><img alt="Key Agreement dialog showing the DH tab, parameter controls, A and B key fields, calculation mode, and shared secret output." src="../../images/key_agree_dlg.png" /></p>
+<p><em>Figure 1. Key Agreement dialog with the DH tab selected. The ECDH tab provides equivalent key agreement controls for elliptic-curve keys.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>DH / ECDH tabs</strong> — Select finite-field DH or elliptic-curve ECDH.</li>
+<li><strong>DH parameters</strong> — In the <strong>DH</strong> tab, choose <strong>Parameter Len</strong>, select the <strong>g value</strong> (generator), and enter the <strong>p value</strong> (prime modulus) as hexadecimal. <strong>GenParam</strong> generates DH parameters. <strong>Import</strong> and <strong>Export</strong> load and save DH parameters.</li>
+<li><strong>A and B keys</strong> — Enter each participant's private and public keys in hexadecimal. Use <strong>GenPriKey</strong> to generate a private key and <strong>GenKeyPair</strong> to generate a key pair. The public key is derived from the corresponding private key and DH/ECDH parameters.</li>
+<li><strong>ECDH parameters and key tools</strong> — In the <strong>ECDH</strong> tab, choose a curve or parameter set. The adjacent field displays its identifier. The A and B key areas provide controls to generate or check keys, find a private-key file, or retrieve keys from CertMan or KeyPairMan.</li>
+<li><strong>Edit Mode</strong> — Enables editing of all A/B private and public key fields. In calculation mode, only the fields needed for the selected participant are enabled.</li>
+<li><strong>A Calculate / B Calculate</strong> — Select which participant computes the shared secret. <strong>Run</strong> performs that calculation.</li>
+<li><strong>Display shared key Y value</strong> — For ECDH, also display the Y component of the computed shared point when available. The shared secret's X component is shown by default.</li>
+<li><strong>Secret Key</strong> — Displays the calculated result in hexadecimal and its length. <strong>C</strong> clears this output.</li>
+<li><strong>Clear Data All / Close</strong> — Clear the dialog's values or close the dialog.</li>
+</ol>
+<h2 id="calculate-a-dh-shared-secret">Calculate a DH Shared Secret</h2>
+<ol>
+<li>Select the <strong>DH</strong> tab.</li>
+<li>Choose a parameter length and generator, or enter/import the agreed <strong>p</strong> and <strong>g</strong> values. Both participants must use the same parameters.</li>
+<li>Enter or generate A's and B's private/public keys. For A's calculation, provide <strong>A PrivateKey</strong> and <strong>B PublicKey</strong>. For B's calculation, provide <strong>B PrivateKey</strong> and <strong>A PublicKey</strong>.</li>
+<li>Select <strong>A Calculate</strong> or <strong>B Calculate</strong>, then select <strong>Run</strong>.</li>
+<li>Read the resulting shared value in <strong>Secret Key</strong>. The dialog also writes calculation details to BerEditor's log.</li>
+</ol>
+<h2 id="calculate-an-ecdh-shared-secret">Calculate an ECDH Shared Secret</h2>
+<ol>
+<li>Select the <strong>ECDH</strong> tab and choose the same curve or parameter set used by both participants.</li>
+<li>Enter or generate the participant key pairs. To calculate as A, provide <strong>A PrivateKey</strong> and <strong>B PublicKey</strong>; to calculate as B, provide <strong>B PrivateKey</strong> and <strong>A PublicKey</strong>.</li>
+<li>Select the calculation side and choose <strong>Run</strong>.</li>
+<li>Read the shared secret in <strong>Secret Key</strong>. Enable <strong>Display shared key Y value</strong> if you also need the Y component shown.</li>
+</ol>
+<h2 id="generate-and-import-parameters-or-keys">Generate and Import Parameters or Keys</h2>
+<ul>
+<li>In the <strong>DH</strong> tab, select a parameter length and use <strong>GenParam</strong> to create parameters. Use <strong>Export</strong> to save them or <strong>Import</strong> to load existing parameters.</li>
+<li>Use <strong>GenPriKey</strong> and <strong>GenKeyPair</strong> to create DH key material. The private key and public key must belong to the same participant and parameters.</li>
+<li>In the <strong>ECDH</strong> tab, select the desired curve before generating keys. The <strong>FindPriKey</strong>, <strong>GetFromCertMan</strong>, and <strong>GetFromKeyPair</strong> controls can load existing private/public key material. The check controls validate the displayed public key or key pair.</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>A and B must use the same DH parameters or ECDH curve, and each side must calculate with its own private key and the other side's public key. Both calculations should produce the same shared secret.</li>
+<li>Values entered directly in the key and parameter fields use hexadecimal encoding.</li>
+<li><strong>Edit Mode</strong> is useful when preparing both participants' values manually; the normal A/B calculation selection enables the inputs required for that calculation.</li>
+<li>Treat private keys and shared secrets as sensitive data. Clear the fields when finished if the dialog should not retain them.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../PUB_ENC_DEC_DLG_EN/" class="btn btn-neutral float-left" title="PubKey Encrypt/Decrypt"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../PKCS7_DLG_EN/" class="btn btn-neutral float-right" title="PKCS7">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../PUB_ENC_DEC_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../PKCS7_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

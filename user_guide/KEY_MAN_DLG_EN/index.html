@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/KEY_MAN_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Key Manage - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Key Manage";
+        var mkdocs_page_input_path = "user_guide/KEY_MAN_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/KEY_MAN_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Cryptography</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Key Manage</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#tabs">Tabs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#key-derivation">Key Derivation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#key-wrap-and-unwrap">Key Wrap and Unwrap</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#key-encapsulation-kem">Key Encapsulation (KEM)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#encapsulate">Encapsulate</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#decapsulate">Decapsulate</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Cryptography</li>
+      <li class="breadcrumb-item active">Key Manage</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="key-management-dialog-guide">Key Management Dialog Guide</h1>
+<p>The <strong>Key Management</strong> dialog provides three tools: key derivation, symmetric key wrapping/unwrapping, and key encapsulation. Open it from <strong>Cryptography &gt; Key Manage</strong>.</p>
+<p><img alt="Key Management dialog showing the KeyDerive tab with KDF choices, password, salt, hash parameters, and derived key output." src="../../images/key_man_dlg.png" /></p>
+<p><em>Figure 1. Key Management dialog on the KeyDerive tab. The dialog also contains KeyWrap and KEM tabs.</em></p>
+<h2 id="tabs">Tabs</h2>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KeyDerive</strong></td>
+<td>Derives a key using PBKDF2, HKDF, ANS X9.63, or Scrypt.</td>
+</tr>
+<tr>
+<td><strong>KeyWrap</strong></td>
+<td>Wraps or unwraps key bytes using KW or KWP and a key-encryption key (KEK).</td>
+</tr>
+<tr>
+<td><strong>KEM</strong></td>
+<td>Encapsulates a shared key using a public key or decapsulates it using the matching private key.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-derivation">Key Derivation</h2>
+<ol>
+<li>Open <strong>KeyDerive</strong> and select a derivation method.</li>
+<li>Enter the password or secret and choose its input representation where available.</li>
+<li>Enter method-specific salt and information values, and select a hash where applicable.</li>
+<li>Set the desired <strong>Derived Key Len</strong> in bytes and any method parameters.</li>
+<li>Select <strong>Derive Key</strong>. The derived key is displayed as hexadecimal.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Main inputs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PBKDF2</strong></td>
+<td>Password (String), salt, iteration count, hash, and key length.</td>
+</tr>
+<tr>
+<td><strong>HKDF</strong></td>
+<td>Secret, salt, optional Info, hash, and key length. A salt is required by this dialog.</td>
+</tr>
+<tr>
+<td><strong>ANS.X963</strong></td>
+<td>Secret, Info, hash, and key length.</td>
+</tr>
+<tr>
+<td><strong>Scrypt</strong></td>
+<td>Password, salt, N/r/p parameters, and key length. The hash and Info controls are not used.</td>
+</tr>
+</tbody>
+</table>
+<p>The input type selectors for secret, salt, and Info use the available data formats shown by the dialog, such as Hex, String, and Base64. Length fields are calculated automatically. Use the salt <strong>C</strong> button or the derived-key <strong>C</strong> button to clear those fields. <strong>Clear Data All</strong> clears the dialog's derivation, wrapping, and KEM data.</p>
+<h2 id="key-wrap-and-unwrap">Key Wrap and Unwrap</h2>
+<ol>
+<li>Open <strong>KeyWrap</strong> and choose <strong>KW</strong> or <strong>KWP</strong> under <strong>Method</strong>.</li>
+<li>Choose <strong>Wrap</strong> or <strong>Unwrap</strong>.</li>
+<li>Enter the source key (for Wrap) or wrapped key (for Unwrap). Select the input representation.</li>
+<li>Enter the <strong>KEK</strong> and its representation, or use <strong>Gen KEK</strong> to generate an AES key of the selected length (16, 24, or 32 bytes).</li>
+<li>Select <strong>Run</strong>. The result is shown in hexadecimal.</li>
+</ol>
+<p>In Wrap mode, the result is the <strong>Wrapped Key</strong>. In Unwrap mode, the result is the recovered <strong>Source key</strong>. The up-arrow button moves the result into the source field for another operation. In KW mode, the source key must be at least 16 bytes. KWP supports padding for inputs that do not meet the KW block-size requirement.</p>
+<h2 id="key-encapsulation-kem">Key Encapsulation (KEM)</h2>
+<p>KEM uses a public key to generate a shared key and an encapsulated value, then uses the matching private key to recover the same shared key.</p>
+<h3 id="encapsulate">Encapsulate</h3>
+<ol>
+<li>Open <strong>KEM</strong> and select <strong>Encapsulate</strong>.</li>
+<li>Choose the public key source: select <strong>Use CertMan</strong> to select from certificate management, or enable <strong>Select private key or public key</strong> and provide a certificate or public key file.</li>
+<li>Select <strong>Encapsulate</strong>. The generated shared key and wrapped/encapsulated key are shown as hexadecimal values.</li>
+</ol>
+<h3 id="decapsulate">Decapsulate</h3>
+<ol>
+<li>Select <strong>Decapsulate</strong>.</li>
+<li>Choose the private key source: <strong>Use CertMan</strong>, or enable <strong>Select private key or public key</strong> and provide a private key file.</li>
+<li>If the private key file is encrypted, select its encrypted-key option and enter the password.</li>
+<li>Enter the encapsulated value in <strong>Wrapped Key</strong> and select <strong>Decapsulate</strong>.</li>
+<li>The recovered shared key appears in the key output field.</li>
+</ol>
+<p>The KEM operation supports RSA, ECDSA, and ML-KEM key types in the current implementation. The key and encapsulated-value fields provide <strong>Find</strong>, <strong>View</strong>, <strong>Decode</strong>, or <strong>Type</strong> actions for the selected file, where available. Clear buttons remove the corresponding values.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>Check that the selected representation matches the entered text. Invalid Hex or Base64 input prevents the operation.</li>
+<li>Key derivation requires a password or secret. HKDF also requires a salt.</li>
+<li>Key wrapping requires both source data and a KEK. KW requires a source key of at least 16 bytes.</li>
+<li>KEM encapsulation requires a supported public key or certificate; decapsulation requires the matching supported private key and encapsulated value.</li>
+<li>Operation failures are reported in a warning, and activity details may also appear in the BerEditor log.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../TEXT_VIEW_DLG_EN/" class="btn btn-neutral float-left" title="Text View"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../GEN_HASH_DLG_EN/" class="btn btn-neutral float-right" title="Hash">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../TEXT_VIEW_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../GEN_HASH_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
