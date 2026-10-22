@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/TTLV_ENCODER_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>TTLV Encoder - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "TTLV Encoder";
+        var mkdocs_page_input_path = "user_guide/TTLV_ENCODER_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/TTLV_ENCODER_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Cryptography</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Service</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_PAIR_MAN_DLG_EN/">KeyPair Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_MAN_DLG_EN/">Certificate Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_LIST_DLG_EN/">Key List</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSL_CHECK_DLG_EN/">SSL Check</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DOC_SIGNER_DLG_EN/">Document Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PDF_SIGNER_DLG_EN/">PDF Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../CAVP_DLG.md">CAVP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Protocol</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../OCSP_CLIENT_DLG_EN/">OCSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TSP_CLIENT_DLG_EN/">TSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CMP_CLIENT_DLG_EN/">CMP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SCEP_CLIENT_DLG_EN/">SCEP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ACME_CLIENT_DLG_EN/">ACME Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../EST_CLIENT_DLG_EN/">EST Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >KMIP</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../DECODE_TTLV_DLG_EN/">Decode TTLV</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_TTLV_DLG_EN/">Make TTLV</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">TTLV Encoder</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#authentication">Authentication</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#request-parameters">Request parameters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#select-an-operation">Select an operation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#generate-and-use-output">Generate and use output</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TTLV_CLIENT_DLG_EN/">TTLV Client</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">KMIP</li>
+      <li class="breadcrumb-item active">TTLV Encoder</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ttlv-encoder">TTLV Encoder</h1>
+<p>The <strong>TTLV Encoder</strong> creates a KMIP request by selecting an operation and filling its parameters. The output is a hexadecimal TTLV message.</p>
+<p><img alt="TTLV Encoder dialog" src="../../images/ttlv_encoder_dlg.png" /></p>
+<h2 id="authentication">Authentication</h2>
+<p>The <strong>Authentication</strong> group is optional. Enable it to include a KMIP UserID and Password in the request.</p>
+<h2 id="request-parameters">Request parameters</h2>
+<p>Available parameters depend on the selected operation. The dialog enables the relevant fields.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UUID</td>
+<td>Object unique identifier used by operations that target an existing object.</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Length parameter, used by applicable operations such as random number retrieval.</td>
+</tr>
+<tr>
+<td>Hash</td>
+<td>Hash or signature digest selection. The initial selection follows BerEditor's default hash setting.</td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>Attribute used by attribute operations.</td>
+</tr>
+<tr>
+<td>ObjectType</td>
+<td>Object category such as SecretKey, PrivateKey, PublicKey, or Certificate.</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>Cryptographic mode, including RSA modes and AES modes where applicable.</td>
+</tr>
+<tr>
+<td>Algorithm</td>
+<td>RSA, ECDSA, or AES.</td>
+</tr>
+<tr>
+<td>KeyLength / Option</td>
+<td>Key size or algorithm-specific option. ECDSA options include P-256, P-384, and P-521; AES sizes are 16, 24, and 32 bytes.</td>
+</tr>
+<tr>
+<td>IV format / IV</td>
+<td>Input format and initialization vector for operations that use an IV.</td>
+</tr>
+<tr>
+<td>Input format / Input</td>
+<td>Data for the selected operation. Choose Hex, String, or Base64; <strong>Find</strong> loads data from a file.</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>Signature bytes used by Verify.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="select-an-operation">Select an operation</h2>
+<p>The <strong>Type</strong> selector groups commands:</p>
+<ul>
+<li><strong>Object:</strong> Create, Activate, Get, Destroy, Register, Locate, Create Key Pair.</li>
+<li><strong>Cryptography:</strong> Encrypt, Decrypt, Sign, Verify, Hash, RNG Seed, RNG Retrieve.</li>
+<li><strong>Attribute:</strong> Add Attribute, Get Attributes, Modify Attribute, Get Attribute List, Delete Attribute.</li>
+</ul>
+<p>Choose the group and then the command. Fill the fields that become available for that operation. For example, Encrypt and Decrypt use an object UUID and input; Verify also needs a signature; RNG Retrieve uses a length.</p>
+<h2 id="generate-and-use-output">Generate and use output</h2>
+<ol>
+<li>Select a <strong>Type</strong> and command.</li>
+<li>Enter the operation parameters. Enable <strong>Authentication</strong> and provide credentials if the request requires them.</li>
+<li>Select <strong>Encode</strong>. The generated TTLV appears in <strong>Output</strong> as hexadecimal text.</li>
+<li>Use the output decode control to inspect the encoded request in BerEditor's main view. Use <strong>Clear</strong> controls to clear individual input, signature, or output areas; <strong>Clear All</strong> resets the form.</li>
+<li>Select <strong>OK</strong> to return the generated output when that button is available. In managed mode, the dialog is used as an encoder panel and <strong>OK</strong> is hidden. <strong>Close</strong> exits the dialog.</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../MAKE_TTLV_DLG_EN/" class="btn btn-neutral float-left" title="Make TTLV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../TTLV_CLIENT_DLG_EN/" class="btn btn-neutral float-right" title="TTLV Client">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../MAKE_TTLV_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../TTLV_CLIENT_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
