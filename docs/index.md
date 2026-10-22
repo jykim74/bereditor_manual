@@ -1,17 +1,53 @@
-# Welcome to MkDocs
+---
+layout: post
+title: "BerEditor ( ASN.1 DER BER and KMIP TTLV Viewer and Editor )"
+tags: [ASN.1,ASN.1 viewer, BER, BER reader, BER viewer, DER ,DER reader, BigNum Calc, KMIP, TTLV]
+category: Software
+---
+This tool is capable of editing  and viewing for BER and DER  data.
+BerEditor is ASN.1 viewer.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+In addition, there are PKI-related functions such as encryption/decryption, signing/verification, OTP generation, BigNum calc and viewing OID values required for PKI or crypto development.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+And it supports reading and editing TTLV encoding format, which is the protocol format for KMIP.
 
-## Project layout
+The size is about 29M.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is a program I made personally, so if you have any questions or bugs, use [Google Groups]( https://groups.google.com/g/bereditor, "Google Groups" )
+
+[[Download] BerEditor Version 2.9.6 (Win64)]( https://jykim74.github.io/msi/BerEditor-enV296.msi "BerEditor" )
+
+[[Download] BerEditor Version 2.9.6 (MacOS)]( https://jykim74.github.io/dmg/BerEditorV296.dmg "BerEditor" )
+
+[[Download] BerEditor Version 2.9.6 (Linux64)]( https://jykim74.github.io/zip/BerEditorV296.zip "BerEditor" )
+
+If you would like to receive a license, simply write a request in [Free License Request](https::/jykim7.mycafe24.com/user_reg.php) and you can receive a trial (30-day) license.
+Of course, you can apply for a license multiple times.
+
+This is a [Manual link]( https://jykim74.tistory.com/category/Manual/BerEditor "BerEditor Manual")  to the Korean manual page.
+Although it is lacking, the manual page supports a translator.
+
+## Licensed or not licensed
+
+|classification|License Version|Unlicensed Version|
+|---|---|---|
+| DER BER view | O | O |
+| Data Encode | O | O |
+| Num Converter | O | O |
+| OID Information | O | O |
+|XML Tab| O | X |
+|Text Tab | O | X |
+| Log Tab | O | X |
+| Cryptogram All Menu | O | X |
+| BER Edit | O | X |
+| SSL Verify | O | X |
+| Certificate Path Validation | O | X |
+| KMIP TTLV | O | X |
+| X509 Compare | O | X |
+| ACME Client | O | X |
+
+
+
+[screen shot]
+![bereditor_eng](https://user-images.githubusercontent.com/23622335/231694027-2c105393-a052-4008-a5d9-082437ce1744.png)
