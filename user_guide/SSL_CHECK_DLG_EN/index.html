@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/SSL_CHECK_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>SSL Check - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SSL Check";
+        var mkdocs_page_input_path = "user_guide/SSL_CHECK_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/SSL_CHECK_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Cryptography</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Service</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_PAIR_MAN_DLG_EN/">KeyPair Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_MAN_DLG_EN/">Certificate Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_LIST_DLG_EN/">Key List</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">SSL Check</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#check-an-https-server">Check an HTTPS Server</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#check-a-mutual-tls-server">Check a Mutual TLS Server</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DOC_SIGNER_DLG_EN/">Document Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PDF_SIGNER_DLG_EN/">PDF Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../CAVP_DLG.md">CAVP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Protocol</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../OCSP_CLIENT_DLG_EN/">OCSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TSP_CLIENT_DLG_EN/">TSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CMP_CLIENT_DLG_EN/">CMP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SCEP_CLIENT_DLG_EN/">SCEP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ACME_CLIENT_DLG_EN/">ACME Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../EST_CLIENT_DLG_EN/">EST Client</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Service</li>
+      <li class="breadcrumb-item active">SSL Check</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ssl-check-dialog-guide">SSL Check Dialog Guide</h1>
+<p>The <strong>SSL Check</strong> dialog connects to an HTTPS server and reports TLS, certificate, and trust information. It can also test servers that require mutual TLS client authentication.</p>
+<p><img alt="SSL Check dialog showing TLS protocol options, hostname and verification settings, trusted CA input, URL check controls, result table, and certificate tree/log." src="../../images/ssl_check_dlg.png" /></p>
+<p><em>Figure 1. SSL Check dialog on the Server tab. Enter a server URL and select Check to test the TLS connection and certificate chain.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Server / Mutual tabs</strong> — Configure ordinary server checks on <strong>Server</strong>. Use <strong>Mutual</strong> to configure a client certificate and private key for mutual TLS.</li>
+<li><strong>View Trust List / Use Mutual Auth</strong> — Open CertMan's trusted root list or enable client-certificate authentication.</li>
+<li><strong>Protocol options</strong> — Check <code>NO_SSLv3</code>, <code>NO_TLSv1</code>, <code>NO_TLSv1_1</code>, <code>NO_TLSv1_2</code>, and <code>NO_TLSv1_3</code> to disable the corresponding protocol versions for the test connection.</li>
+<li><strong>Check Host Name</strong> — Enable hostname verification so the server certificate is checked against the requested host.</li>
+<li><strong>Verify Mode / Verify Depth</strong> — Set the TLS certificate verification mode and maximum chain depth. The displayed default depth is 4.</li>
+<li><strong>Trust CA</strong> — Optionally select a trusted CA certificate file with <strong>Find</strong>. <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> view, decode, and identify the selected file.</li>
+<li><strong>Fix Cipher</strong> — Enable a restricted cipher configuration, choose a TLS version and cipher, and select <strong>Add</strong>. <strong>Clear</strong> removes the configured cipher selection.</li>
+<li><strong>URL / Check</strong> — Enter a hostname or URL and select <strong>Check</strong>. If no scheme is supplied, the dialog assumes <code>https://</code>; the default port is 443. <strong>C</strong> clears the URL field.</li>
+<li><strong>Results table</strong> — Lists tested URL, port, certificate distinguished name, and expiry. Select or right-click a row for available certificate actions, including viewing, decoding, or checking it again.</li>
+<li><strong>Clear URLs / Refresh</strong> — Clear the current result list or rerun checks for the saved URLs.</li>
+<li><strong>SSL Tree and Log</strong> — <strong>Tree</strong> displays certificate authority/path information; <strong>Log</strong> shows connection and verification details. <strong>Clear Result</strong> clears results; <strong>Clear Log</strong> clears the log.</li>
+<li><strong>Show Information / Close</strong> — Opens the selected server's SSL information window or closes the dialog.</li>
+</ol>
+<h2 id="check-an-https-server">Check an HTTPS Server</h2>
+<ol>
+<li>On the <strong>Server</strong> tab, configure protocol versions, hostname checking, verification mode, and verification depth as needed.</li>
+<li>Optionally select a <strong>Trust CA</strong> certificate or use the configured trust list.</li>
+<li>Enter a URL such as <code>https://example.com</code>, or a hostname such as <code>example.com</code>.</li>
+<li>Select <strong>Check</strong>. Review the result table, certificate tree, and log for connection and chain status.</li>
+<li>Select <strong>Show Information</strong> to inspect details for the selected result. Use <strong>Refresh</strong> to check saved URLs again.</li>
+</ol>
+<h2 id="check-a-mutual-tls-server">Check a Mutual TLS Server</h2>
+<ol>
+<li>Enable <strong>Use Mutual Auth</strong> and open the <strong>Mutual</strong> tab.</li>
+<li>Provide the client CA certificate and select a client certificate/private-key pair, either from CertMan or with the individual certificate and private-key file controls.</li>
+<li>If the private key is encrypted, enable <strong>Encrypted PrivateKey</strong> and enter its password.</li>
+<li>Return to the server check and select <strong>Check</strong>. The client credentials are presented during the TLS handshake.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The URL check tests the live server connection using the current network, TLS, hostname, and trust settings. A server's configuration and certificate status can change over time.</li>
+<li>Disabling protocol versions or restricting ciphers changes the handshake options and may prevent connection to servers that do not support the remaining choices.</li>
+<li>Mutual TLS requires a client certificate and its matching private key. Keep private-key files and passwords confidential.</li>
+<li>A successful TLS connection and certificate verification are distinct from application-level security or the server's identity beyond the selected verification checks.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../KEY_LIST_DLG_EN/" class="btn btn-neutral float-left" title="Key List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../DOC_SIGNER_DLG_EN/" class="btn btn-neutral float-right" title="Document Signer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../KEY_LIST_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../DOC_SIGNER_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

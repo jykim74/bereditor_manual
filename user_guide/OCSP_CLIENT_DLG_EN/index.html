@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/OCSP_CLIENT_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>OCSP Client - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "OCSP Client";
+        var mkdocs_page_input_path = "user_guide/OCSP_CLIENT_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/OCSP_CLIENT_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Cryptography</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Service</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_PAIR_MAN_DLG_EN/">KeyPair Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_MAN_DLG_EN/">Certificate Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_LIST_DLG_EN/">Key List</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSL_CHECK_DLG_EN/">SSL Check</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DOC_SIGNER_DLG_EN/">Document Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PDF_SIGNER_DLG_EN/">PDF Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../CAVP_DLG.md">CAVP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocol</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">OCSP Client</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-and-send-a-status-request">Create and Send a Status Request</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verify-a-response">Verify a Response</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TSP_CLIENT_DLG_EN/">TSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CMP_CLIENT_DLG_EN/">CMP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SCEP_CLIENT_DLG_EN/">SCEP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ACME_CLIENT_DLG_EN/">ACME Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../EST_CLIENT_DLG_EN/">EST Client</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Protocol</li>
+      <li class="breadcrumb-item active">OCSP Client</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ocsp-client-dialog-guide">OCSP Client Dialog Guide</h1>
+<p>The <strong>OCSP Client</strong> creates an Online Certificate Status Protocol request, sends it to a responder, and verifies the returned response. It can include a nonce and optionally sign the request.</p>
+<p><img alt="OCSP Client dialog showing responder URL, CA and target certificates, request signing and nonce options, request and response panels, verification flags, and response verification controls." src="../../images/ocsp_client_dlg.png" /></p>
+<p><em>Figure 1. OCSP Client dialog. Configure the responder and target certificate, encode or send a request, then verify the response.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>OCSP URL</strong> — Enter or select the responder URL. Previously used URLs are retained. <strong>Clear</strong> clears the URL history/input.</li>
+<li><strong>Set OCSP URL from AIA / Set CA from AIA</strong> — Read the responder URL or issuer CA certificate from the target certificate's Authority Information Access information.</li>
+<li><strong>CA cert</strong> — Select the issuer CA certificate. <strong>Find</strong> browses for a certificate; <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> view, decode, and identify it.</li>
+<li><strong>Certificate</strong> — Select the certificate whose status is being checked. The dialog can also obtain it from CertMan. The adjacent <strong>Find</strong>, <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> controls select, view, decode, or identify the certificate.</li>
+<li><strong>Use Sign / Use Nonce</strong> — Optionally sign the OCSP request with a signing certificate/private key and include a nonce. The signing certificate and key can be selected from CertMan or from individual files; enable <strong>Enc PrivateKey</strong> and enter its password for a protected key. The nonce value is hexadecimal.</li>
+<li><strong>Request</strong> — <strong>Encode</strong> builds the OCSP request. <strong>Auto send</strong> sends it immediately after encoding; otherwise use <strong>Send</strong>. <strong>C</strong> clears the request and <strong>D</strong> decodes it in BerEditor.</li>
+<li><strong>Verify Flags</strong> — Enable the flag group and select any applicable response-checking flags: <code>NOCHAIN</code>, <code>NOSIGS</code>, <code>NOINTERN</code>, <code>NOCERTS</code>, <code>NOVERIFY</code>, <code>NOEXPLICIT</code>, <code>NOCASIGN</code>, or <code>NODELEGATED</code>.</li>
+<li><strong>Response</strong> — Displays the responder response in hexadecimal. <strong>View Response</strong> opens response details; <strong>View CertID</strong> inspects the certificate identifier; <strong>Verify</strong> validates the response. <strong>C</strong> clears the response and <strong>D</strong> decodes it.</li>
+<li><strong>OCSP Certificate</strong> — Select the responder certificate when needed for response verification. <strong>Find</strong>, <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> select or inspect it.</li>
+<li><strong>Clear All / Close</strong> — Clear dialog data or close the client.</li>
+</ol>
+<h2 id="create-and-send-a-status-request">Create and Send a Status Request</h2>
+<ol>
+<li>Enter the <strong>OCSP URL</strong> or select <strong>Set OCSP URL from AIA</strong> after choosing a target certificate.</li>
+<li>Select the target <strong>Certificate</strong>. Provide its <strong>CA cert</strong> or use <strong>Set CA from AIA</strong> where available.</li>
+<li>Optionally enable <strong>Use Nonce</strong> and enter a hexadecimal nonce. Enable <strong>Use Sign</strong> and select signing credentials if the responder requires signed requests.</li>
+<li>Select <strong>Encode</strong>. Enable <strong>Auto send</strong> to transmit immediately, or select <strong>Send</strong> after reviewing the encoded request.</li>
+<li>The response is placed in the <strong>Response</strong> area when the HTTP request succeeds.</li>
+</ol>
+<h2 id="verify-a-response">Verify a Response</h2>
+<ol>
+<li>Select the relevant responder certificate if needed.</li>
+<li>Configure <strong>Verify Flags</strong> according to the verification requirements.</li>
+<li>Select <strong>Verify</strong> and review the result in BerEditor's message/log area. Use <strong>View Response</strong> and <strong>View CertID</strong> to inspect details.</li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The CA certificate identifies the issuer of the certificate being checked; the OCSP responder certificate is used to verify the signed response. These may be different certificates.</li>
+<li>Request signing is optional and is separate from the responder's response signature.</li>
+<li>A successful HTTP send only confirms the responder returned data. Use <strong>Verify</strong> to validate the OCSP response before relying on its status.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../PDF_SIGNER_DLG_EN/" class="btn btn-neutral float-left" title="PDF Signer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../TSP_CLIENT_DLG_EN/" class="btn btn-neutral float-right" title="TSP Client">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../PDF_SIGNER_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../TSP_CLIENT_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

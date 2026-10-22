@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/CMP_CLIENT_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>CMP Client - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "CMP Client";
+        var mkdocs_page_input_path = "user_guide/CMP_CLIENT_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/CMP_CLIENT_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Cryptography</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Service</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_PAIR_MAN_DLG_EN/">KeyPair Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_MAN_DLG_EN/">Certificate Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_LIST_DLG_EN/">Key List</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSL_CHECK_DLG_EN/">SSL Check</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DOC_SIGNER_DLG_EN/">Document Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PDF_SIGNER_DLG_EN/">PDF Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../CAVP_DLG.md">CAVP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Protocol</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../OCSP_CLIENT_DLG_EN/">OCSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TSP_CLIENT_DLG_EN/">TSP Client</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">CMP Client</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-and-send-a-cmp-request">Create and Send a CMP Request</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#command-reference">Command Reference</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SCEP_CLIENT_DLG_EN/">SCEP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ACME_CLIENT_DLG_EN/">ACME Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../EST_CLIENT_DLG_EN/">EST Client</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Protocol</li>
+      <li class="breadcrumb-item active">CMP Client</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cmp-client-dialog-guide">CMP Client Dialog Guide</h1>
+<p>The <strong>CMP Client</strong> creates and sends Certificate Management Protocol requests for certificate enrollment and management. It supports request types including initial request, certification request, key update, revocation, and general messages.</p>
+<p><img alt="CMP Client dialog showing CMP URL, CA certificate and optional client credentials, reference number and authorization code, GENM options, command selector, and request/response panels." src="../../images/cmp_client_dlg.png" /></p>
+<p><em>Figure 1. CMP Client dialog with GENM selected. The enabled credential and request fields depend on the selected command.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>CMP URL</strong> — Enter or select the CMP server endpoint. <strong>Clear</strong> clears the URL history/input.</li>
+<li><strong>CA Cert</strong> — Select the CA certificate used by CMP. <strong>Find</strong>, <strong>V</strong>, <strong>D</strong>, and <strong>T</strong> browse, view, decode, or identify the certificate.</li>
+<li><strong>Select each certificate and private key</strong> — Enable this group to select a client certificate and private key from files; otherwise use CertMan. Enable <strong>Enc Private Key</strong> and enter its password if the key file is encrypted.</li>
+<li><strong>Ref Num / Auth Code</strong> — Enter the reference number and authorization code supplied by the CA for enrollment commands that use the out-of-band credentials.</li>
+<li><strong>Subject DN</strong> — Enter the requested subject distinguished name for <strong>IR</strong> or <strong>CR</strong> requests.</li>
+<li><strong>GENM / GENP tabs</strong> — <strong>GENM</strong> exposes General Message Information Type and Value (ITAV) options such as <strong>CA CERTS</strong>, <strong>ROOT CA CERT</strong>, <strong>CERT PROFILE</strong>, <strong>CURRENT CRL</strong>, and <strong>SIGN KEY PAIR TYPES</strong>. <strong>GENP</strong> provides general message parameters where available.</li>
+<li><strong>Command / Run</strong> — Select the CMP operation and choose <strong>Run</strong> to create the request. Supported commands are <strong>GENM</strong>, <strong>IR</strong>, <strong>CR</strong>, <strong>P10CR</strong>, <strong>SignGENM</strong>, <strong>KUR</strong>, and <strong>RR</strong>.</li>
+<li><strong>Request</strong> — Displays the encoded CMP request. <strong>Send</strong> transmits the request to the CMP URL. <strong>C</strong>, <strong>D</strong>, and <strong>V</strong> clear, decode, or view the request.</li>
+<li><strong>Response</strong> — Displays the received CMP response. <strong>C</strong>, <strong>D</strong>, and <strong>V</strong> clear, decode, or view it.</li>
+<li><strong>Clear All / Close</strong> — Clear the dialog or close the client.</li>
+</ol>
+<h2 id="create-and-send-a-cmp-request">Create and Send a CMP Request</h2>
+<ol>
+<li>Enter the CMP server URL and select the CA certificate.</li>
+<li>Choose a command. For <strong>IR</strong> or <strong>CR</strong>, enter the requested <strong>Subject DN</strong>. For <strong>GENM</strong> or <strong>SignGENM</strong>, select the required ITAV options. Enrollment commands may require <strong>Ref Num</strong> and <strong>Auth Code</strong>.</li>
+<li>For commands requiring an existing identity, enable <strong>Select each certificate and private key</strong> and choose the matching client certificate/key, or select them from CertMan.</li>
+<li>Select <strong>Run</strong> to create the request. Review it with <strong>V</strong> or <strong>D</strong> if needed.</li>
+<li>Select <strong>Send</strong> and review the response. Issued certificate/private-key material may be offered for saving to CertMan.</li>
+</ol>
+<h2 id="command-reference">Command Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GENM</code></td>
+<td>Request general information from the CA using selected ITAV values.</td>
+</tr>
+<tr>
+<td><code>IR</code></td>
+<td>Initial certificate request.</td>
+</tr>
+<tr>
+<td><code>CR</code></td>
+<td>Request certificate issuance for a subject.</td>
+</tr>
+<tr>
+<td><code>P10CR</code></td>
+<td>Submit a PKCS #10 certificate request.</td>
+</tr>
+<tr>
+<td><code>SignGENM</code></td>
+<td>Send a signed general message using client credentials.</td>
+</tr>
+<tr>
+<td><code>KUR</code></td>
+<td>Request a key update using an existing certificate/key pair.</td>
+</tr>
+<tr>
+<td><code>RR</code></td>
+<td>Request certificate revocation using the existing certificate/key pair.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The server URL, CA certificate, and command-specific credentials must match the CMP CA configuration.</li>
+<li>Reference numbers and authorization codes are enrollment secrets; handle them as credentials.</li>
+<li>A generated request is not sent until <strong>Send</strong> is selected. Review the response and any certificate/key save prompts.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../TSP_CLIENT_DLG_EN/" class="btn btn-neutral float-left" title="TSP Client"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../SCEP_CLIENT_DLG_EN/" class="btn btn-neutral float-right" title="SCEP Client">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../TSP_CLIENT_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../SCEP_CLIENT_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

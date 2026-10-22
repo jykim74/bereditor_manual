@@ -9,6 +9,10 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/ACME_CLIENT_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/BER_CHECK_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
@@ -25,11 +29,31 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/CAVP_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/CERT_MAN_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/CERT_PVD_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/CMP_CLIENT_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/DOC_SIGNER_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/ENC_DEC_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/EST_CLIENT_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -53,7 +77,15 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/KEY_LIST_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/KEY_MAN_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/KEY_PAIR_MAN_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -65,6 +97,14 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/OCSP_CLIENT_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/PDF_SIGNER_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/PKCS7_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
@@ -73,7 +113,15 @@
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/SCEP_CLIENT_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/SIGN_VERIFY_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/SSL_CHECK_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
@@ -82,6 +130,10 @@
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/TEXT_VIEW_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/TSP_CLIENT_DLG_EN/</loc>
          <lastmod>2026-10-22</lastmod>
     </url>
     <url>
