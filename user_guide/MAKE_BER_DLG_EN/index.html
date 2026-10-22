@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/MAKE_BER_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Make BER - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Make BER";
+        var mkdocs_page_input_path = "user_guide/MAKE_BER_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/MAKE_BER_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Make BER</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#create-a-ber-value">Create a BER Value</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tag-and-value-notes">Tag and Value Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#if-validation-fails">If Validation Fails</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Make BER</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="make-ber-dialog-guide">Make BER Dialog Guide</h1>
+<p>The <strong>Make BER</strong> dialog builds a BER-encoded value from a tag and value. Open it from <strong>Tool &gt; Make BER</strong>.</p>
+<p><img alt="Make BER dialog showing tag settings, value input, generated header, BER output, and Make/Close buttons." src="../../images/make_ber_dlg.png" /></p>
+<p><em>Figure 1. Make BER dialog. The header and BER output are updated as the tag settings and value change.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>More Type</strong> — Adds additional universal tag types to the Tag type list.</li>
+<li><strong>Class</strong> — Selects the BER tag class: <strong>Universal</strong>, <strong>Application</strong>, <strong>Content-Specific</strong>, or <strong>Private</strong>.</li>
+<li><strong>Constructed</strong> — Sets the constructed bit. <strong>SEQUENCE</strong> and <strong>SET</strong> are always constructed; other universal types cannot be changed to constructed in this dialog.</li>
+<li><strong>Indefinite</strong> — Uses indefinite length for constructed data. This option is enabled only when Constructed is selected. The generated BER ends with the end-of-contents marker <code>00 00</code>.</li>
+<li><strong>Tag / Number</strong> — For the Universal class, select a tag type from the list. For the other classes, enter the tag number in hexadecimal. The tag number for Content-Specific is limited to <code>1F</code> (31) or less in this dialog.</li>
+<li><strong>Tag bits</strong> — Shows the BER tag byte in binary (<code>[T] 0b</code>).</li>
+<li><strong>L</strong> — Shows the generated length field in hexadecimal.</li>
+<li><strong>Value format and input</strong> — Select the input representation and enter the value. Available formats are <strong>Hex</strong>, <strong>String</strong>, and <strong>Base64</strong>. The <strong>Len</strong> field shows the decoded value length.</li>
+<li><strong>C</strong> — Clears the value input.</li>
+<li><strong>Make Value</strong> — Opens a helper for supported value types such as BitString, Integer, or ObjectIdentifier. Availability depends on the selected tag and value format.</li>
+<li><strong>BER Header</strong> — Displays the generated tag and length bytes in hexadecimal.</li>
+<li><strong>BER output</strong> — Displays the complete BER value in hexadecimal. Its <strong>Len</strong> field shows the output length.</li>
+<li><strong>Make</strong> — Validates and accepts the generated BER value. From <strong>Tool &gt; Make BER</strong>, the value is then loaded into the main BER view.</li>
+<li><strong>Close</strong> — Closes the dialog without accepting the generated value.</li>
+</ol>
+<h2 id="create-a-ber-value">Create a BER Value</h2>
+<ol>
+<li>Open <strong>Tool &gt; Make BER</strong>.</li>
+<li>Choose a <strong>Class</strong>.</li>
+<li>For <strong>Universal</strong>, choose a tag type. Use <strong>More Type</strong> if the required universal type is not in the initial list. For another class, enter the tag <strong>Number</strong> in hexadecimal.</li>
+<li>Set <strong>Constructed</strong> or <strong>Indefinite</strong> if applicable. These controls are constrained by the selected tag class and type.</li>
+<li>Select the value format, then enter the value. The BER Header and BER output update as you edit the settings.</li>
+<li>Review the header, length, and complete BER output.</li>
+<li>Select <strong>Make</strong> to validate and load the result into the main BER view.</li>
+</ol>
+<h2 id="tag-and-value-notes">Tag and Value Notes</h2>
+<ul>
+<li>The default universal tag is <strong>SEQUENCE</strong>, with Constructed enabled.</li>
+<li><strong>NULL</strong> has no value input; the value field is disabled for this tag.</li>
+<li><strong>SEQUENCE</strong> and <strong>SET</strong> require the Constructed bit. Other universal tag types are treated as primitive by this dialog.</li>
+<li>For a constructed value with <strong>Indefinite</strong> selected, the BER output uses an indefinite length and appends <code>00 00</code> as the end-of-contents marker.</li>
+<li>A BER <strong>BOOLEAN</strong> value must be exactly one byte.</li>
+<li>For <strong>BIT STRING</strong>, the first value byte must be between <code>00</code> and <code>07</code>, representing the number of unused bits.</li>
+<li>For non-universal classes, enter the tag number in hexadecimal. The Content-Specific class uses a low tag number up to <code>1F</code> here.</li>
+</ul>
+<h2 id="if-validation-fails">If Validation Fails</h2>
+<p>If the selected input format cannot be decoded, BerEditor reports a format error and returns focus to the value field. Correct the input format or value, then select <strong>Make</strong> again. Boolean and BitString values have the additional constraints listed above.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../oid_info_dlg/" class="btn btn-neutral float-left" title="OID Information"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../BER_CHECK_DLG_EN/" class="btn btn-neutral float-right" title="Check BER">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../oid_info_dlg/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../BER_CHECK_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

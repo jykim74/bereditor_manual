@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/TEXT_VIEW_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Text View - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Text View";
+        var mkdocs_page_input_path = "user_guide/TEXT_VIEW_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/TEXT_VIEW_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Text View</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#view-data">View Data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#view-modes">View Modes</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Text View</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="text-view-dialog-guide">Text View Dialog Guide</h1>
+<p>The <strong>Text View</strong> dialog presents decoded BER or KMIP TTLV data as an indented text listing, or shows its hexadecimal values. Open it from <strong>Tool &gt; Text View</strong>.</p>
+<p><img alt="Text View dialog with String View and Hex View options, View Information, and print controls." src="../../images/text_view_dlg.png" /></p>
+<p><em>Figure 1. Text View dialog. String View is selected by default; choose Hex View to inspect encoded bytes.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Find</strong> — Loads a binary file to view. BerEditor parses it as BER or, when detected, KMIP TTLV.</li>
+<li><strong>String View</strong> — Displays parsed fields and values in an indented text layout. This is the default view.</li>
+<li><strong>Hex View</strong> — Displays parsed structures and their hexadecimal bytes.</li>
+<li><strong>View Information</strong> — Adds an ASCII/printable-text column in Hex View. This option is available only in Hex View and is disabled for String View.</li>
+<li><strong>Output area</strong> — Shows the listing. It is read-only and does not wrap long lines.</li>
+<li><strong>Print / Print Preview</strong> — Prints the displayed listing or previews it before printing.</li>
+<li><strong>Close</strong> — Closes the dialog.</li>
+</ol>
+<h2 id="view-data">View Data</h2>
+<ol>
+<li>Open Text View from the selected data in BerEditor, or select <strong>Find</strong> to load a file.</li>
+<li>Choose <strong>String View</strong> or <strong>Hex View</strong>.</li>
+<li>In Hex View, optionally select <strong>View Information</strong> to show printable characters alongside hexadecimal bytes.</li>
+<li>Scroll through the parsed output. Use <strong>Print</strong> or <strong>Print Preview</strong> if needed.</li>
+</ol>
+<p>The viewer detects KMIP TTLV data and displays its parsed structure. Otherwise, it parses the input as BER. You can also drag and drop a local file onto the dialog.</p>
+<h2 id="view-modes">View Modes</h2>
+<ul>
+<li><strong>String View</strong> focuses on decoded values and structure. The information-column option is unavailable in this mode.</li>
+<li><strong>Hex View</strong> shows bytes in groups of up to 16, with offsets and structural indentation. Enable <strong>View Information</strong> to include printable text beside the bytes.</li>
+<li>The view area is read-only; use the main BerEditor tools to edit or construct data.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../BIN_VIEW_DLG_EN/" class="btn btn-neutral float-left" title="Binary View"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../BIN_VIEW_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

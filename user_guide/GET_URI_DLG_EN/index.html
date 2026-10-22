@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/GET_URI_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Get BER from URI - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Get BER from URI";
+        var mkdocs_page_input_path = "user_guide/GET_URI_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/GET_URI_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Get BER from URI</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#retrieve-data-from-an-https-uri">Retrieve Data from an HTTP(S) URI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#retrieve-data-from-ldap">Retrieve Data from LDAP</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#use-an-ldap-uri">Use an LDAP URI</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enter-ldap-host-information-separately">Enter LDAP Host Information Separately</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Get BER from URI</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="get-ber-from-uri-dialog-guide">Get BER from URI Dialog Guide</h1>
+<p>The <strong>Get BER from URI</strong> dialog retrieves BER-encoded data from an HTTP(S) or LDAP address and loads the result into the main BerEditor window for decoding. Open it from <strong>Tool &gt; Get BER from URI</strong>.</p>
+<p><img alt="Get BER from URI dialog showing the URI address, LDAP host options, LDAP search condition, and Get button." src="../../images/get_uri_dlg.png" /></p>
+<p><em>Figure 1. Get BER from URI dialog. Enter an HTTP(S) or LDAP address, or enable LDAP Host Information to supply LDAP connection and search details separately.</em></p>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>URI Address</strong> — Enter or select an address. Recent addresses are available from the drop-down list. The dialog accepts <code>http</code>, <code>https</code>, and <code>ldap</code> schemes.</li>
+<li><strong>Example</strong> — Shows an example certificate URL.</li>
+<li><strong>Clear Used URI</strong> — Removes the saved recent URI list.</li>
+<li><strong>Use LDAP Host Information</strong> — Switches from a full URI to separately entered LDAP connection details. When enabled, the URI field is disabled and the LDAP Host Information group is enabled.</li>
+<li><strong>LDAP Host Information</strong> — Enter the LDAP server <strong>Host</strong>, <strong>Port</strong>, and search <strong>DN</strong>. The host and port are retained as settings for later use.</li>
+<li><strong>LDAP Search Condition</strong> — Supplies LDAP search options: <strong>Scope</strong>, certificate <strong>Type</strong>, and <strong>Filter</strong>. The default filter is <code>(objectClass=*)</code>.</li>
+<li><strong>Get</strong> — Retrieves data from the selected address and asks BerEditor to decode the returned data.</li>
+<li><strong>Close</strong> — Closes the dialog.</li>
+</ol>
+<h2 id="retrieve-data-from-an-https-uri">Retrieve Data from an HTTP(S) URI</h2>
+<ol>
+<li>Leave <strong>Use LDAP Host Information</strong> unchecked.</li>
+<li>Enter or select an <code>http://</code> or <code>https://</code> address in <strong>URI Address</strong>.</li>
+<li>Select <strong>Get</strong>.</li>
+<li>If retrieval succeeds, BerEditor decodes the returned data in the main window and displays a success message.</li>
+</ol>
+<p>The address can also be selected from the recent URI list. Successfully used addresses are saved in that list. <strong>Clear Used URI</strong> removes the saved list.</p>
+<h2 id="retrieve-data-from-ldap">Retrieve Data from LDAP</h2>
+<p>You can provide LDAP details in either of these ways:</p>
+<h3 id="use-an-ldap-uri">Use an LDAP URI</h3>
+<ol>
+<li>Leave <strong>Use LDAP Host Information</strong> unchecked.</li>
+<li>Enter an <code>ldap://</code> URI that identifies the LDAP server and search location.</li>
+<li>Set the search <strong>Type</strong> and <strong>Filter</strong> if needed.</li>
+<li>Select <strong>Get</strong>.</li>
+</ol>
+<p>The dialog reads the server, DN, scope, filter, and requested attribute from the LDAP URI when those values are present. The selected <strong>Type</strong> and filter field are used as defaults where the URI does not specify them.</p>
+<h3 id="enter-ldap-host-information-separately">Enter LDAP Host Information Separately</h3>
+<ol>
+<li>Select <strong>Use LDAP Host Information</strong>.</li>
+<li>Enter the LDAP server <strong>Host</strong>, <strong>Port</strong>, and <strong>DN</strong>.</li>
+<li>Choose a <strong>Scope</strong>, <strong>Type</strong>, and <strong>Filter</strong>.</li>
+<li>Select <strong>Get</strong>.</li>
+</ol>
+<p>The current implementation provides the <code>BASE</code> scope. Available certificate types are <code>caCertificate</code>, <code>signCertificate</code>, <code>userCertificate</code>, <code>certificateRevocationList</code>, <code>autorithRevocationList</code>, <code>deltaRevocationList</code>, and <code>certificateTrustList</code>.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>Enter an address before selecting <strong>Get</strong>. The dialog reports an error when the URI is empty or uses an unsupported scheme.</li>
+<li>For LDAP host mode, provide a DN. Check the host, port, and server availability if connection or bind errors appear.</li>
+<li>If retrieval fails, BerEditor reports the retrieval error in a warning or log message.</li>
+<li>Retrieved data is passed to the main BER decoder. If the server returns data that is not valid BER, decoding may fail even when the network request succeeds.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../BER_CHECK_DLG_EN/" class="btn btn-neutral float-left" title="Check BER"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../BIN_VIEW_DLG_EN/" class="btn btn-neutral float-right" title="Binary View">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../BER_CHECK_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../BIN_VIEW_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/BER_CHECK_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Check BER - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Check BER";
+        var mkdocs_page_input_path = "user_guide/BER_CHECK_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/BER_CHECK_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Check BER</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#supported-formats">Supported Formats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#screen-areas">Screen Areas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#check-a-source-file-or-value">Check a Source File or Value</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#open-details-or-decode">Open Details or Decode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notes-and-troubleshooting">Notes and Troubleshooting</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+      <li class="breadcrumb-item active">Check BER</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ber-format-check-dialog-guide">BER Format Check Dialog Guide</h1>
+<p>The <strong>BER format check</strong> dialog checks whether BER-encoded data matches a supported PKI format. It can identify a format, validate a selected format, open format-specific details, or decode the data in the main BerEditor window. Open it from <strong>Tool &gt; Check BER</strong>.</p>
+<p><img alt="BER format check dialog with supported formats, file or source input, format selection, and check/view/decode actions." src="../../images/ber_check_dlg.png" /></p>
+<p><em>Figure 1. BER format check dialog. Provide a file or encoded source, identify or select a format, then choose the appropriate check or view action.</em></p>
+<h2 id="supported-formats">Supported Formats</h2>
+<p>The dialog can identify or check these formats:</p>
+<ul>
+<li>Certificate</li>
+<li>CRL (certificate revocation list)</li>
+<li>CSR (certificate signing request)</li>
+<li>PublicKey</li>
+<li>PrivateKey</li>
+<li>PrivateKeyInfo</li>
+<li>EncPrivateKey (encrypted private key)</li>
+<li>CMS</li>
+<li>PKCS7</li>
+<li>OCSP response</li>
+<li>CMP message</li>
+</ul>
+<h2 id="screen-areas">Screen Areas</h2>
+<ol>
+<li><strong>Format list</strong> — Shows the formats supported by the checker.</li>
+<li><strong>BER file</strong> — Select this to use a file as the source. The <strong>Find</strong> button opens a BER file picker, and the path is shown beside the checkbox.</li>
+<li><strong>Source format</strong> — When <strong>BER file</strong> is unchecked, choose how the source text is represented: <strong>Hex</strong> or <strong>Base64</strong>.</li>
+<li><strong>Source length</strong> — Shows the calculated length for the selected source representation.</li>
+<li><strong>Source input</strong> — Enter or paste the encoded bytes when using text input.</li>
+<li><strong>BER Type Check</strong> — Detects the source's supported PKI format and selects it in the format list.</li>
+<li><strong>Format selector</strong> — Choose a specific format to validate or inspect.</li>
+<li><strong>Format Check</strong> — Checks whether the source conforms to the selected format and reports success or an error.</li>
+<li><strong>V</strong> — Opens the format-specific information view after validating the selected format. Encrypted private keys require a password.</li>
+<li><strong>D</strong> — Decodes the source in the main BerEditor window using the selected format title.</li>
+<li><strong>Clear</strong> — Clears the file path and source text.</li>
+<li><strong>Close</strong> — Closes the dialog.</li>
+</ol>
+<h2 id="check-a-source-file-or-value">Check a Source File or Value</h2>
+<ol>
+<li>Choose the source method:</li>
+<li>To check a file, select <strong>BER file</strong>, then select <strong>Find</strong> and choose the file.</li>
+<li>To check encoded text, leave <strong>BER file</strong> unchecked, select <strong>Hex</strong> or <strong>Base64</strong>, and enter the source in the input area.</li>
+<li>Select <strong>BER Type Check</strong> to detect a supported format, or choose the expected format from the format selector.</li>
+<li>Select <strong>Format Check</strong> to validate the source against the selected format.</li>
+<li>Read the success message or the reported format error.</li>
+</ol>
+<h2 id="open-details-or-decode">Open Details or Decode</h2>
+<ul>
+<li>After choosing a format, select <strong>V</strong> to open its detail window. The selected format must pass its format check. Available detail views include certificate, CRL, CSR, public/private key, CMS/PKCS7, OCSP response, and CMP message information.</li>
+<li>Select <strong>D</strong> to decode the source in the main BER view. A format must be selected first.</li>
+<li>For an encrypted private key, <strong>V</strong> prompts for the password before showing key details.</li>
+</ul>
+<h2 id="notes-and-troubleshooting">Notes and Troubleshooting</h2>
+<ul>
+<li>When using text input, the source must match its selected representation (<strong>Hex</strong> or <strong>Base64</strong>). Invalid or empty input cannot be checked.</li>
+<li><strong>BER Type Check</strong> identifies only the formats listed above. If the source is unsupported or malformed, the dialog reports that it could not determine a supported format.</li>
+<li><strong>Format Check</strong> requires a format selection. Choose the expected type or run <strong>BER Type Check</strong> first.</li>
+<li>Use <strong>Clear</strong> before starting a new check to remove the previous file path and source text.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../MAKE_BER_DLG_EN/" class="btn btn-neutral float-left" title="Make BER"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../GET_URI_DLG_EN/" class="btn btn-neutral float-right" title="Get BER from URI">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../MAKE_BER_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../GET_URI_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -2,38 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jykim.github.io/bereditor_manual/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/get_start/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/BER_CHECK_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/BER_COMPARE_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/BIN_VIEW_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/GET_URI_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/MAKE_BER_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://jykim.github.io/bereditor_manual/user_guide/TEXT_VIEW_DLG_EN/</loc>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/data_converter_dlg/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/decode_data_dlg/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/main_ui/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/mainwindow_ui/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/menu/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/num_converter_dlg/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
     <url>
          <loc>https://jykim.github.io/bereditor_manual/user_guide/oid_info_dlg/</loc>
-         <lastmod>2026-10-21</lastmod>
+         <lastmod>2026-10-22</lastmod>
     </url>
 </urlset>
