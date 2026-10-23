@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/FIND_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Find - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Find";
+        var mkdocs_page_input_path = "user_guide/FIND_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/FIND_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Edit</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Find</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#search-options">Search options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ber-header-filters">BER header filters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ttlv-header-filters">TTLV header filters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#search">Search</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Cryptography</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Service</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_PAIR_MAN_DLG_EN/">KeyPair Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_MAN_DLG_EN/">Certificate Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_LIST_DLG_EN/">Key List</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSL_CHECK_DLG_EN/">SSL Check</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../X509_COMPARE_DLG_EN/">X509 Compare</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DOC_SIGNER_DLG_EN/">Document Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PDF_SIGNER_DLG_EN/">PDF Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../CAVP_DLG.md">CAVP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Protocol</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../OCSP_CLIENT_DLG_EN/">OCSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TSP_CLIENT_DLG_EN/">TSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CMP_CLIENT_DLG_EN/">CMP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SCEP_CLIENT_DLG_EN/">SCEP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ACME_CLIENT_DLG_EN/">ACME Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../EST_CLIENT_DLG_EN/">EST Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >KMIP</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DECODE_TTLV_DLG_EN/">Decode TTLV</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_TTLV_DLG_EN/">Make TTLV</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TTLV_ENCODER_DLG_EN/">TTLV Encoder</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TTLV_CLIENT_DLG_EN/">TTLV Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Help</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../SETTINGS_DLG_EN/">Settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CONTENT_MAIN_EN/">Content</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../LCN_INFO_DLG_EN/">License Information</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Edit</li>
+      <li class="breadcrumb-item active">Find</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="find-in-ber-or-ttlv-data">Find in BER or TTLV Data</h1>
+<p>The <strong>Find</strong> dialog searches the currently open BER or TTLV structure for a value. BerEditor enables the matching tab based on the format currently open in the main window.</p>
+<blockquote>
+<p>A <code>find_dlg.png</code> screenshot is not currently present in the project's <code>images</code> folder.</p>
+</blockquote>
+<h2 id="search-options">Search options</h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BER / TTLV tabs</td>
+<td>Select the data format. The active document determines which tab is available.</td>
+</tr>
+<tr>
+<td>Header Check</td>
+<td>Enables the header filters. When unchecked, the search matches values regardless of their headers.</td>
+</tr>
+<tr>
+<td>Matched</td>
+<td>Limits the search to an exact value match.</td>
+</tr>
+<tr>
+<td>Search value</td>
+<td>Enter the value to find.</td>
+</tr>
+<tr>
+<td>Value format</td>
+<td>Selects the input representation. BER searches support String, Hex, Decimal, and OID; TTLV searches support String, Hex, and Decimal.</td>
+</tr>
+<tr>
+<td>Hex value</td>
+<td>Shows the converted hexadecimal bytes for the search value. Its length is displayed beside it.</td>
+</tr>
+<tr>
+<td>Next / Previous</td>
+<td>Searches forward or backward from the current selection.</td>
+</tr>
+<tr>
+<td>Edit</td>
+<td>Opens the selected BER or TTLV node for editing.</td>
+</tr>
+<tr>
+<td>Close</td>
+<td>Closes the dialog.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ber-header-filters">BER header filters</h2>
+<p>With <strong>Header Check</strong> enabled on the BER tab, configure the optional header criteria:</p>
+<ul>
+<li><strong>Class:</strong> Universal, Application, Content-Specific, or Private.</li>
+<li><strong>Tag:</strong> Select a standard BER tag for Universal class. For other classes, enter a tag ID.</li>
+<li><strong>Constructed:</strong> Match constructed values when selected.</li>
+<li><strong>Header:</strong> Displays the generated one-byte BER header used by the search.</li>
+</ul>
+<h2 id="ttlv-header-filters">TTLV header filters</h2>
+<p>With <strong>Header Check</strong> enabled on the TTLV tab, enter a six-digit hexadecimal <strong>Tag</strong> and select a <strong>Type</strong>. The tag name is shown when recognized. <strong>Any</strong> searches all TTLV types for that tag; otherwise the generated header includes the selected type.</p>
+<h2 id="search">Search</h2>
+<ol>
+<li>Open the BER or TTLV data in the main window. The dialog activates the corresponding tab.</li>
+<li>Enter the value and choose its format. The hexadecimal representation updates as you type.</li>
+<li>Optionally enable <strong>Header Check</strong> and set BER or TTLV header criteria. Enable <strong>Matched</strong> for exact matching.</li>
+<li>Select <strong>Next</strong> or <strong>Previous</strong> to move to a matching node. The node is selected in the main view.</li>
+<li>Select <strong>Edit</strong> to edit the selected node, or <strong>Close</strong> to dismiss the dialog.</li>
+</ol>
+<p>If the value cannot be converted or no matching node exists, BerEditor displays a warning.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../menu/" class="btn btn-neutral float-left" title="Menu"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../decode_data_dlg/" class="btn btn-neutral float-right" title="Decode Data">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../menu/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../decode_data_dlg/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

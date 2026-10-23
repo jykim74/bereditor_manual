@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="JayKim" /><link rel="canonical" href="https://jykim.github.io/bereditor_manual/user_guide/X509_COMPARE_DLG_EN/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>X509 Compare - BerEditor</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "X509 Compare";
+        var mkdocs_page_input_path = "user_guide/X509_COMPARE_DLG_EN.md";
+        var mkdocs_page_url = "/bereditor_manual/user_guide/X509_COMPARE_DLG_EN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-287S0CKBNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-287S0CKBNS");
+      </script>
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> BerEditor
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../get_start/">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../mainwindow_ui/">Main UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../menu/">Menu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Edit</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../FIND_DLG_EN/">Find</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tool</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../decode_data_dlg/">Decode Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_converter_dlg/">Data Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../num_converter_dlg/">Num Converter</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../oid_info_dlg/">OID Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_BER_DLG_EN/">Make BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BER_CHECK_DLG_EN/">Check BER</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GET_URI_DLG_EN/">Get BER from URI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BIN_VIEW_DLG_EN/">Binary View</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TEXT_VIEW_DLG_EN/">Text View</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Cryptography</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_MAN_DLG_EN/">Key Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_HASH_DLG_EN/">Hash</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_MAC_DLG_EN/">Message Authentication Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ENC_DEC_DLG_EN/">Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SIGN_VERIFY_DLG_EN/">Sign/Verify</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PUB_ENC_DEC_DLG_EN/">PubKey Encrypt/Decrypt</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_AGREE_DLG_EN/">Key Agreement</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PKCS7_DLG_EN/">PKCS7</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSS_DLG_EN/">Shamir Secret Sharing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_PVD_DLG_EN/">Certificate Path Validation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../GEN_OTP_DLG_EN/">OTP Generator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../VID_DLG_EN/">VID</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../BN_CALC_DLG_EN/">BN Calculator</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_PRI_KEY_DLG_EN/">Make PrivateKey</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Service</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_PAIR_MAN_DLG_EN/">KeyPair Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CERT_MAN_DLG_EN/">Certificate Manage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../KEY_LIST_DLG_EN/">Key List</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SSL_CHECK_DLG_EN/">SSL Check</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">X509 Compare</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#select-inputs">Select inputs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inspect-field-values">Inspect field values</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compare-two-objects">Compare two objects</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../DOC_SIGNER_DLG_EN/">Document Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../PDF_SIGNER_DLG_EN/">PDF Signer</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../CAVP_DLG.md">CAVP</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Protocol</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../OCSP_CLIENT_DLG_EN/">OCSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TSP_CLIENT_DLG_EN/">TSP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CMP_CLIENT_DLG_EN/">CMP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../SCEP_CLIENT_DLG_EN/">SCEP Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ACME_CLIENT_DLG_EN/">ACME Client</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../EST_CLIENT_DLG_EN/">EST Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >KMIP</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../DECODE_TTLV_DLG_EN/">Decode TTLV</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../MAKE_TTLV_DLG_EN/">Make TTLV</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TTLV_ENCODER_DLG_EN/">TTLV Encoder</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TTLV_CLIENT_DLG_EN/">TTLV Client</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Help</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../SETTINGS_DLG_EN/">Settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../CONTENT_MAIN_EN/">Content</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../LCN_INFO_DLG_EN/">License Information</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">BerEditor</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">User Guide</li>
+          <li class="breadcrumb-item">Service</li>
+      <li class="breadcrumb-item active">X509 Compare</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="x509-compare">X.509 Compare</h1>
+<p>The <strong>X509 Compare</strong> dialog compares two X.509 objects and displays corresponding fields side by side. It supports certificates, certificate revocation lists (CRLs), and certificate signing requests (CSRs).</p>
+<blockquote>
+<p>An <code>x509_compare_dlg.png</code> screenshot is not currently present in the project's <code>images</code> folder.</p>
+</blockquote>
+<h2 id="select-inputs">Select inputs</h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparison target</td>
+<td>Select Certificate, CRL, or CSR.</td>
+</tr>
+<tr>
+<td>A Path / B Path</td>
+<td>Paths to the two input files. You can use <strong>Find</strong> or drop files onto the dialog; dropped files fill A first and then B.</td>
+</tr>
+<tr>
+<td>Find</td>
+<td>Selects an input file matching the chosen comparison type.</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Opens the selected object in its detail viewer.</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Decodes the selected file in the main BerEditor view.</td>
+</tr>
+<tr>
+<td>Auto detection X509 type</td>
+<td>Detects the input object types automatically and disables manual type selection.</td>
+</tr>
+<tr>
+<td>Compare</td>
+<td>Compares the two inputs and populates the results table.</td>
+</tr>
+<tr>
+<td>Result indicator</td>
+<td>Shows whether the objects are the same or different, or that comparison has not yet run.</td>
+</tr>
+</tbody>
+</table>
+<p>The comparison table contains a field name and the values from A and B. Difference indicators mark fields whose values differ. Double-clicking a value opens the corresponding certificate, CRL, or CSR details.</p>
+<h2 id="inspect-field-values">Inspect field values</h2>
+<p>Select a row to show its detailed A and B values in the <strong>X509 A and B Value</strong> panel. Use <strong>Show Value</strong> if the panel is hidden. <strong>BER Compare</strong> compares the encoded BER data for the selected objects in BerEditor's BER comparison view.</p>
+<h2 id="compare-two-objects">Compare two objects</h2>
+<ol>
+<li>Choose the comparison target, or enable automatic X.509 type detection.</li>
+<li>Select the A and B files with <strong>Find</strong>, or drag and drop them into the dialog. Confirm both paths are populated.</li>
+<li>Select <strong>Compare</strong>.</li>
+<li>Review the overall result and compare corresponding fields in the table. Select a row to inspect its detailed values, or double-click a value to open the object's information dialog.</li>
+<li>Select <strong>BER Compare</strong> to inspect the encoded structures. Use <strong>Clear</strong> to remove both inputs and results, and <strong>Close</strong> when finished.</li>
+</ol>
+<p>A and B must contain the same X.509 object type. BerEditor reports a warning if a file cannot be recognized or the selected inputs have different types.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../SSL_CHECK_DLG_EN/" class="btn btn-neutral float-left" title="SSL Check"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../DOC_SIGNER_DLG_EN/" class="btn btn-neutral float-right" title="Document Signer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../SSL_CHECK_DLG_EN/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../DOC_SIGNER_DLG_EN/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
