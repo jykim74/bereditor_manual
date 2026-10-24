@@ -260,6 +260,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#main-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main window
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-bereditor-is-for" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2253,6 +2264,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#main-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main window
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-bereditor-is-for" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2449,6 +2471,9 @@
 <h1 id="bereditor-asn1-berder-and-kmip-ttlv-workbench">BerEditor: ASN.1, BER/DER, and KMIP TTLV Workbench</h1>
 <p>BerEditor is a desktop utility for inspecting and working with encoded data used in ASN.1-based protocols and Public Key Infrastructure (PKI). Its main window presents BER data as a navigable structure, while related tools support data conversion, certificate and key operations, cryptographic tasks, and KMIP TTLV messages.</p>
 <p>This overview follows the feature set described by the BerEditor project page and the application menus and implementations in the source code. Menu availability can depend on the installed license.</p>
+<h2 id="main-window">Main window</h2>
+<p>The main window is the starting point for opening and navigating encoded data. The screenshot below shows the BerEditor interface with a decoded structure displayed in the central view.</p>
+<p><img alt="BerEditor main window showing a decoded data structure" src="../images/mainwindow.png" /></p>
 <h2 id="what-bereditor-is-for">What BerEditor is for</h2>
 <p>ASN.1 defines data types and structures; BER (Basic Encoding Rules) and DER (Distinguished Encoding Rules) encode those structures as bytes. The bytes themselves can be difficult to interpret by eye. BerEditor decodes supported BER/DER data into a tree so that the structure and values can be examined, and provides tools to create, edit, compare, and validate encoded data.</p>
 <p>The application also recognizes KMIP TTLV (Tag, Type, Length, Value), the message encoding used by the Key Management Interoperability Protocol. TTLV has its own tree and tools in BerEditor; it is related to the application's data-inspection workflow but is not BER or DER.</p>
@@ -2483,11 +2508,17 @@
 <h2 id="licensing">Licensing</h2>
 <p>The project page identifies the following as available in both licensed and unlicensed editions: BER/DER viewing, data encoding, the numeric converter, and OID information. It lists XML, text, and log tabs; cryptographic menu functions; BER editing; SSL Check; Certificate Path Validation; KMIP TTLV; X.509 Compare; and the ACME client as licensed-edition features. Exact feature availability should be confirmed against the version and license in use.</p>
 <h2 id="platforms-downloads-and-support">Platforms, downloads, and support</h2>
-<p>The project page lists Windows 64-bit, macOS, and Linux 64-bit downloads. It describes the download size as approximately 29 MB; actual size may vary by release.</p>
+<p>The project page lists installers or packages for Windows 64-bit, macOS, and Linux 64-bit. The links below are the version 2.9.6 downloads listed on that page:</p>
+<ul>
+<li><a href="https://jykim74.github.io/msi/BerEditor-enV296.msi">BerEditor 2.9.6 for Windows 64-bit</a></li>
+<li><a href="https://jykim74.github.io/dmg/BerEditorV296.dmg">BerEditor 2.9.6 for macOS</a></li>
+<li><a href="https://jykim74.github.io/zip/BerEditorV296.zip">BerEditor 2.9.6 for Linux 64-bit</a></li>
+</ul>
+<p>The project page describes the download size as approximately 29 MB; actual size may vary by platform and release. Check the project page for newer releases.</p>
 <p>For questions or bug reports, the project page directs users to the <a href="https://groups.google.com/g/bereditor">BerEditor Google Group</a>. It also links to the <a href="https://jykim74.tistory.com/category/Manual/BerEditor">BerEditor manual pages</a>, which are primarily in Korean and can be viewed with translation support.</p>
 <h2 id="related-links">Related links</h2>
 <ul>
-<li><a href="https://jykim74.github.io/">BerEditor project page and downloads</a></li>
+<li><a href="https://jykim74.github.io/">BerEditor project page</a></li>
 <li><a href="https://groups.google.com/g/bereditor">BerEditor Google Group</a></li>
 <li><a href="https://jykim74.tistory.com/category/Manual/BerEditor">BerEditor manual pages</a></li>
 </ul>
