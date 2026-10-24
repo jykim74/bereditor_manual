@@ -4,7 +4,7 @@ site_description: BerEditor Manual
 site_author: JayKim
 
 theme:
-  name: readthedocs
+  name: material
   analytics:
     gtag: G-287S0CKBNS
 
@@ -14,6 +14,9 @@ nav:
  - User Guide:
    - Main UI: user_guide/mainwindow_ui.md
    - Menu: user_guide/menu.md
+   - Edit:
+     - Find: user_guide/FIND_DLG_EN.md
+
    - Tool:
      - Decode Data: user_guide/decode_data_dlg.md
      - Data Converter: user_guide/data_converter_dlg.md
@@ -46,6 +49,7 @@ nav:
      - Certificate Manage: user_guide/CERT_MAN_DLG_EN.md
      - Key List: user_guide/KEY_LIST_DLG_EN.md
      - SSL Check: user_guide/SSL_CHECK_DLG_EN.md
+     - X509 Compare: user_guide/X509_COMPARE_DLG_EN.md
      - Document Signer: user_guide/DOC_SIGNER_DLG_EN.md
      - PDF Signer: user_guide/PDF_SIGNER_DLG_EN.md
      - CAVP: user_guide/CAVP_DLG.md
