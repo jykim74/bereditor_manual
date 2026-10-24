@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#viewing-asn1-berder-data-with-bereditor" class="md-skip">
           Skip to content
         </a>
       
@@ -238,6 +238,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -254,6 +272,108 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-load-encoded-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ways to load encoded data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ways to load encoded data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open a file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enter-ber-data-directly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enter BER data directly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-and-drop-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag and drop a file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-data-from-a-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retrieve data from a URI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-decoded-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the decoded data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2061,6 +2181,97 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-load-encoded-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ways to load encoded data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ways to load encoded data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open a file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enter-ber-data-directly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enter BER data directly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-and-drop-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag and drop a file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-data-from-a-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retrieve data from a URI
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-the-decoded-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading the decoded data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2076,7 +2287,39 @@
 
 
 
-<h1 id="getting-started">Getting started</h1>
+<h1 id="viewing-asn1-berder-data-with-bereditor">Viewing ASN.1 BER/DER Data with BerEditor</h1>
+<p>BerEditor can decode ASN.1 data encoded with BER or DER and display its structure and values. This is useful when examining X.509 certificates, certificate revocation lists (CRLs), private keys, and other ASN.1-based data.</p>
+<p>This guide is adapted from the <a href="https://jykim74.tistory.com/115">original BerEditor article</a>. The screenshots below use the corresponding images included with this project.</p>
+<h2 id="ways-to-load-encoded-data">Ways to load encoded data</h2>
+<p>BerEditor provides several ways to open data:</p>
+<ol>
+<li>Open a file from the <strong>File &gt; Open</strong> menu.</li>
+<li>Paste hexadecimal or Base64 data into the BER decoder.</li>
+<li>Drag and drop a BER/DER binary or PEM file into the application.</li>
+<li>Retrieve data from a URI using <strong>Tool &gt; Get BER from URI</strong>.</li>
+</ol>
+<h3 id="open-a-file">Open a file</h3>
+<p>Choose <strong>File &gt; Open</strong>, then select a BER or DER binary file. PEM-encoded files can also be opened; BerEditor recognizes common input encodings automatically.</p>
+<p><img alt="BerEditor with an encoded certificate opened" src="../images/mainwindow.png" /></p>
+<h3 id="enter-ber-data-directly">Enter BER data directly</h3>
+<p>Choose <strong>Tool &gt; Decode BER</strong> and enter the data as hexadecimal or Base64 text. The example below shows the decoder dialog with hexadecimal input.</p>
+<p><img alt="Decode BER dialog" src="../images/decode_data_dlg.png" /></p>
+<h3 id="drag-and-drop-a-file">Drag and drop a file</h3>
+<p>You can also drag a BER/DER binary file or a PEM file from your file manager and drop it into BerEditor. The decoded data opens in the main viewer.</p>
+<h3 id="retrieve-data-from-a-uri">Retrieve data from a URI</h3>
+<p>Choose <strong>Tool &gt; Get BER from URI</strong> to retrieve encoded data from a network address. For HTTP, BerEditor issues a GET request and treats the response body as binary data. For LDAP, it connects to the LDAP address and retrieves data using the specified filter and data type.</p>
+<p><img alt="Get BER from URI dialog" src="../images/get_uri_dlg.png" /></p>
+<h2 id="reading-the-decoded-data">Reading the decoded data</h2>
+<p>The viewer organizes decoded data into three main areas:</p>
+<ul>
+<li><strong>BER tree:</strong> the hierarchical ASN.1 structure.</li>
+<li><strong>Hex view:</strong> the encoded bytes, with multiple display modes.</li>
+<li><strong>Selected-item details:</strong> information about the node selected in the BER tree.</li>
+</ul>
+<p>BerEditor detects common input forms such as binary BER/DER, PEM, and Base64. The right-hand pane also provides tabs for viewing data as <strong>Hex</strong>, <strong>XML</strong>, <strong>Text</strong>, and <strong>JSON</strong>.</p>
+<p><img alt="Decoded BER data shown in BerEditor's tree, hex, and detail panes" src="../images/mainwindow.png" /></p>
+<h2 id="summary">Summary</h2>
+<p>Use file opening, direct data entry, drag and drop, or URI retrieval to load BER/DER data. Then navigate the tree, inspect the encoded bytes, and use the alternate views to understand the decoded structure.</p>
 
 
 
