@@ -88,7 +88,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="BerEditor" class="md-header__button md-logo" aria-label="BerEditor" data-md-component="logo">
       
-  <img src="../assets/favicon.png" alt="logo">
+  <img src="../assets/bereditor.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -185,7 +185,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="BerEditor" class="md-nav__button md-logo" aria-label="BerEditor" data-md-component="logo">
       
-  <img src="../assets/favicon.png" alt="logo">
+  <img src="../assets/bereditor.png" alt="logo">
 
     </a>
     BerEditor
@@ -341,10 +341,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-without-a-license" class="md-nav__link">
+  <a href="#feature-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available without a license
+        Feature comparison
       
     </span>
   </a>
@@ -352,52 +352,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#features-requiring-a-license" class="md-nav__link">
+  <a href="#license-and-access-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features requiring a license
+        License and access comparison
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Features requiring a license">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ber-and-data-inspection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BER and data inspection
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cryptography-and-key-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cryptography and key management
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#certificate-and-protocol-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Certificate and protocol services
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2213,10 +2174,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-without-a-license" class="md-nav__link">
+  <a href="#feature-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available without a license
+        Feature comparison
       
     </span>
   </a>
@@ -2224,52 +2185,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#features-requiring-a-license" class="md-nav__link">
+  <a href="#license-and-access-comparison" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features requiring a license
+        License and access comparison
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Features requiring a license">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ber-and-data-inspection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BER and data inspection
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cryptography-and-key-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cryptography and key management
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#certificate-and-protocol-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Certificate and protocol services
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2314,39 +2236,96 @@
 
 <h1 id="bereditor-features-by-license-status">BerEditor Features by License Status</h1>
 <p>This page summarizes the feature differences between the unlicensed and licensed versions of BerEditor. It reflects the application menus and license checks in the source code; available actions can also vary by build and platform.</p>
-<h2 id="available-without-a-license">Available without a license</h2>
-<p>The unlicensed version provides core BER work and general-purpose tools, including:</p>
-<ul>
-<li>Open and inspect BER data in the main tree view.</li>
-<li>Decode BER and use the data converter and numeric converter.</li>
-<li>View binary data and use the BER information pane.</li>
-<li>Open certificate and CSR information dialogs and inspect their basic fields.</li>
-<li>Use standard file and navigation actions that remain enabled in the unlicensed interface.</li>
-</ul>
-<p>The application disables BER node editing in context menus, the Find command, BER creation, BER checking, BER comparison, and the Text View tool without a license. The XML, Text, JSON, and Log tabs are also disabled. BER data larger than 10,000 bytes may require a license.</p>
-<h2 id="features-requiring-a-license">Features requiring a license</h2>
-<p>The licensed version enables the following additional features and controls:</p>
-<h3 id="ber-and-data-inspection">BER and data inspection</h3>
-<ul>
-<li>Edit, insert, delete, and change BER nodes.</li>
-<li>Find values in BER data; create, check, and compare BER data.</li>
-<li>Use the XML, Text, JSON, and Log views.</li>
-<li>Open larger BER files beyond the unlicensed size limit.</li>
-</ul>
-<h3 id="cryptography-and-key-management">Cryptography and key management</h3>
-<ul>
-<li>Key management and key-pair management.</li>
-<li>Hashing, MAC, encryption and decryption, signing and verification, public-key encryption/decryption, and key agreement.</li>
-<li>PKCS#7/CMS operations, secret sharing, certificate validation, OTP generation, and the big-number calculator.</li>
-<li>Private-key generation and key/certificate management tools.</li>
-</ul>
-<h3 id="certificate-and-protocol-services">Certificate and protocol services</h3>
-<ul>
-<li>SSL Check, X.509 Compare, document signing, and CAVP.</li>
-<li>OCSP, TSP, CMP, SCEP, ACME, and EST clients.</li>
-<li>KMIP TTLV decoding, creation, encoding, and client functions.</li>
-<li>Additional certificate and CSR validation or management controls, plus license-restricted certificate settings.</li>
-</ul>
+<h2 id="feature-comparison">Feature comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Without a license</th>
+<th>With a license</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BER files</td>
+<td>Open and inspect BER data in the main tree, subject to the 10,000-byte unlicensed limit.</td>
+<td>Open larger BER files.</td>
+</tr>
+<tr>
+<td>BER operations</td>
+<td>Decode BER.</td>
+<td>Create, check, compare, and edit BER data; insert, delete, and change nodes.</td>
+</tr>
+<tr>
+<td>Search and views</td>
+<td>Binary view and BER information pane; Find and Text View are disabled.</td>
+<td>Find BER values; use XML, Text, JSON, and Log views.</td>
+</tr>
+<tr>
+<td>General converters</td>
+<td>Data converter and numeric converter.</td>
+<td>Data converter and numeric converter remain available.</td>
+</tr>
+<tr>
+<td>Certificate and CSR details</td>
+<td>Open certificate and CSR information dialogs and inspect basic fields.</td>
+<td>Additional validation and management controls.</td>
+</tr>
+<tr>
+<td>Cryptography and keys</td>
+<td>Cryptographic menu operations and key management are disabled.</td>
+<td>Key management and key-pair management; hashing, MAC, encryption/decryption, signing/verification, public-key operations, key agreement, PKCS#7/CMS, secret sharing, OTP, big-number calculator, and private-key generation.</td>
+</tr>
+<tr>
+<td>Certificate and service tools</td>
+<td>Licensed service actions are disabled.</td>
+<td>SSL Check, X.509 Compare, document signing, CAVP, and certificate/key management tools.</td>
+</tr>
+<tr>
+<td>Protocol clients</td>
+<td>OCSP, TSP, CMP, SCEP, ACME, EST, and KMIP TTLV actions are disabled.</td>
+<td>OCSP, TSP, CMP, SCEP, ACME, and EST clients; KMIP TTLV decode, create, encode, and client tools.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="license-and-access-comparison">License and access comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Without a license</th>
+<th>With a license</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application status</td>
+<td>Identified as unlicensed in the window title and About dialog.</td>
+<td>Identified as a licensed version in the license information.</td>
+</tr>
+<tr>
+<td>License management</td>
+<td>Can open License Information and request a license.</td>
+<td>Can review, import, update, or renew a license.</td>
+</tr>
+<tr>
+<td>Free license</td>
+<td>The application includes a free-license request flow; eligibility and request details are provided in the app.</td>
+<td>Available according to the terms shown in the app.</td>
+</tr>
+<tr>
+<td>Applying a change</td>
+<td>A newly issued or imported license may require a restart.</td>
+<td>Restart BerEditor when prompted to apply a changed license.</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>Some advanced settings are disabled.</td>
+<td>License-gated settings are enabled, including hash defaults, file-read size, certificate path, key-pair support, and related certificate options.</td>
+</tr>
+</tbody>
+</table>
+<p>Core file and navigation actions remain available in the unlicensed interface. Feature availability can also vary by build and platform.</p>
 <h2 id="license-status-and-activation">License status and activation</h2>
 <p>BerEditor labels the unlicensed application in its window title and About dialog. You can review license status and request, import, update, or renew a license from the License Information interface. The application includes a free-license request flow; check the current in-app instructions for eligibility and request details. Restart BerEditor when prompted to apply a changed license.</p>
 <h2 id="notes">Notes</h2>
