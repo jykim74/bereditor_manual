@@ -1,6 +1,5 @@
 # BerEditor Menu Guide
 
-This document describes the main menus created in `mainwindow.cpp`. Some items may be hidden or disabled depending on build options or license status.
 
 ## File
 

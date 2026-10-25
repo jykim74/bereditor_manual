@@ -1,8 +1,5 @@
 # BerEditor Main Window UI Guide
 
-This guide describes the main BerEditor window based on `src/BerEditor/mainwindow.cpp` and `src/BerEditor/mainwindow.h`.
-
-> **Image note:** The supplied file `images/mainwindow.png` currently shows the **Data Converter** dialog, not the BerEditor main window. It is included below as provided so the mismatch is visible. Replace it with a main-window capture when one is available.
 
 ![Image currently stored as mainwindow.png; it shows the Data Converter dialog rather than the main window.](../images/mainwindow.png)
 

@@ -56,7 +56,7 @@ nav:
      - X509 Compare: user_guide/X509_COMPARE_DLG_EN.md
      - Document Signer: user_guide/DOC_SIGNER_DLG_EN.md
      - PDF Signer: user_guide/PDF_SIGNER_DLG_EN.md
-     - CAVP: user_guide/CAVP_DLG.md
+     - CAVP: user_guide/CAVP_DLG_EN.md
 
    - Protocol:
      - OCSP Client: user_guide/OCSP_CLIENT_DLG_EN.md
