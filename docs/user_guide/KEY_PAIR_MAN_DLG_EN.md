@@ -36,6 +36,25 @@ The **Key Pair Management** dialog stores, selects, inspects, and uses asymmetri
 4. Select **Save to List** to add the pair to KeyPairMan.
 5. To protect or unlock a private key, provide an encrypted private-key file or key, choose an encryption mode and password, then use **Encrypt PrivateKey** or **Decrypt PrivateKey**.
 
+### Tools tab layout
+
+![KeyPairMan Tools tab with private/public key inputs, key-pair check, CSR controls, and private-key encryption tools.](../more_images/key_pair_man_dlg_1.png)
+
+*Figure 2. The Tools tab groups key-pair operations, CSR handling, and private-key encryption in one workspace.*
+
+The **Private Key** and **Public Key** rows each have a **Find** button and compact controls: **C** clears the selected path, **V** opens a view of the key, **D** decodes its contents in BerEditor, and **T** identifies the key type. Use **Check KeyPair** after selecting both inputs to check that the public and private components correspond. **Save to List** stores the pair in KeyPairMan, while **Make CSR** creates a certificate signing request from the private key.
+
+The lower fields support related files and operations:
+
+- **Enc PriKey** accepts an encrypted private-key file. Use **Find** to select it, **C** to clear the path, and **D** to decode it.
+- **PriKey Info** is for private-key information data; its **C** and **D** controls clear or decode the specified file.
+- **CSR** displays the CSR path. **View** opens it for inspection, while **C** and **D** clear or decode it.
+- **Password** is used with the selected encryption mode for private-key encryption or decryption. **Encrypt PrivateKey** writes an encrypted key, and **Decrypt PrivateKey** processes an encrypted key using the supplied password.
+- **Save as DER** selects DER output for supported save/export operations. Leave it unchecked for the other supported output format.
+- **Clear All** clears the Tools tab inputs so you can start another operation.
+
+The warning at the bottom of the dialog states that private keys stored in KeyPairMan are not encrypted for testing purposes. The password and encryption controls here apply to file-based operations; they do not change that storage behavior. Restrict access to the key-pair directory and use the encryption controls when you need to protect private-key files.
+
 ## Notes
 
 - The dialog displays a notice that private keys in KeyPairMan are not encrypted for testing purposes. Protect the storage directory and exported key files accordingly.
