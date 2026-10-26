@@ -15,6 +15,56 @@ The **Certificate Management** dialog organizes certificates, private keys, cert
 - **Trust RootCA** — Manage trusted root certificates, view or export their public keys, load system trust certificates, and remove trust entries.
 - **Tools** — Work with a private key, certificate, or PFX file. Check key-pair correspondence, inspect key/certificate data, create or extract a PFX, encrypt/decrypt a PFX, and save a PFX entry into End Entity storage.
 
+The screenshots below show the additional tabs and their controls. The certificate paths and certificate names shown are examples from one installation; the contents depend on the local stores.
+
+### Other Cert
+
+![CertMan Other Cert tab with the certificate list and certificate actions.](../more_images/cert_man_dlg_5.png)
+
+*Figure 2. The Other Cert list shows subject DN, expiration date, and issuer DN.*
+
+This tab is for certificates kept outside the End Entity store, such as certificates that you need to inspect or use without managing an associated private key here. The key-type filter can narrow the list by algorithm. Select a row to use **View Cert**, **Decode Cert**, **View PubKey**, **Export Cert**, **Run Verify**, or **Run Encrypt**. **Add Cert** imports a certificate into this store, and **Remove Cert** removes the selected entry. A row's context menu provides additional actions.
+
+### CA
+
+![CertMan CA tab listing CA certificates.](../more_images/cert_man_dlg_4.png)
+
+*Figure 3. CA certificates are listed by subject DN, expiration date, and issuer DN.*
+
+Use this tab to maintain intermediate or other CA certificates used by certificate-path workflows. The path field identifies the configured CA store, and the key-type filter narrows the displayed list. **Add CA** imports a CA certificate; **Remove CA** removes the selected one. **View CA** opens its certificate details, **Decode CA** sends its encoded data to the decoder, **View PubKey** displays the public key, and **Export CA** saves the certificate to a file. These actions manage the CA store; they do not themselves assert that a chain is trusted or valid.
+
+### CRL
+
+![CertMan CRL tab showing issuer and update dates.](../more_images/cert_man_dlg_3.png)
+
+*Figure 4. The CRL list displays each issuer and its This Update and Next Update dates.*
+
+The CRL tab manages Certificate Revocation Lists. The list's update fields help you identify the CRL's stated validity period and freshness. Use **Add CRL** to import a list, **View CRL** to inspect its information, **Decode CRL** to examine its encoded structure, and **Export CRL** or **Remove CRL** to save or remove the selected item. Check the issuer and update dates when choosing a CRL; the dates alone do not establish that it is current or applicable to a particular certificate.
+
+### Trust RootCA
+
+![CertMan Trust RootCA tab with trusted root certificates and trust-store actions.](../more_images/cert_man_dlg_2.png)
+
+*Figure 5. The trust list shows a local name, subject DN, and expiration date for each root certificate.*
+
+This tab manages root certificates in the configured trust store. Select an entry to **View Trust**, **View PubKey**, **Decode Trust**, or **Export Trust**. **Add Trust** adds a certificate to the store, and **Remove Trust** removes the selected entry. **Load System Trust** imports certificates available from the operating system's trust store. Adding a certificate here changes the local trust configuration; only add roots you intend to trust.
+
+### Tools: private keys and PFX files
+
+![CertMan Tools tab for private-key and PFX operations.](../more_images/cert_man_dlg_1.png)
+
+*Figure 6. The Tools tab accepts a private-key file, a certificate, or a PFX file.*
+
+The Tools tab provides a file-based workflow that is separate from selecting an existing End Entity entry:
+
+- Use **Find** beside **EncPrivateKey**, **Certificate**, or **PFX** to choose an input file. The small **V**, **C**, and **D** controls beside key and certificate inputs provide view, clear, and decode actions; PFX provides clear and decode controls.
+- Enable **Encrypted PrivateKey** and enter the private-key password when the selected key file is encrypted. The status line at the bottom reports the key encryption state when known.
+- Choose a PFX encryption mode and provide a PFX password for PFX creation or extraction as required.
+- **Check KeyPair** checks whether the selected private key matches the public key in the selected certificate. **View PubKey** and **Decode PriKeyInfo** help inspect the key material. **Get Random** generates random data for the workflow.
+- **Encrypt PFX** packages the selected key and certificate into a PFX file. **Decrypt PFX** extracts material from a selected PFX. **Save PFX to EE** imports the PFX contents into End Entity storage.
+
+Use **Clear** to remove an input from the corresponding field before choosing another file. Treat private keys and PFX files as sensitive material, and protect exported files and passwords accordingly.
+
 ## End Entity Screen Areas
 
 1. **Certificate Path** — Shows the configured End Entity certificate storage folder. The filter can show all entries or narrow the list by key algorithm.
@@ -28,6 +78,8 @@ The **Certificate Management** dialog organizes certificates, private keys, cert
 9. **Import PFX / Export PFX** — Import or export a PFX package containing certificate/key material.
 10. **Delete Cert** — Remove the selected end-entity entry.
 11. **OK / Close** — **OK** confirms a selection when CertMan is opened in a selection mode. **Close** dismisses the dialog.
+
+The key-type filter can be used to narrow entries to algorithms such as RSA, ECDSA, DSA, SM2, or EdDSA; post-quantum key types may also appear when enabled by the caller. The **ALL** choice shows entries without an algorithm filter. The certificate table can be sorted by its displayed columns, which is useful when locating a subject or checking expiration and issuer information.
 
 ## Manage Certificates and Revocation Data
 
