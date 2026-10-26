@@ -1398,6 +1398,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Tabs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-cert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Cert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust-rootca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trust RootCA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-private-keys-and-pfx-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools: private keys and PFX files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2200,6 +2261,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Tabs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-cert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Cert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trust-rootca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trust RootCA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-private-keys-and-pfx-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools: private keys and PFX files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2276,6 +2398,35 @@
 <li><strong>Trust RootCA</strong> — Manage trusted root certificates, view or export their public keys, load system trust certificates, and remove trust entries.</li>
 <li><strong>Tools</strong> — Work with a private key, certificate, or PFX file. Check key-pair correspondence, inspect key/certificate data, create or extract a PFX, encrypt/decrypt a PFX, and save a PFX entry into End Entity storage.</li>
 </ul>
+<p>The screenshots below show the additional tabs and their controls. The certificate paths and certificate names shown are examples from one installation; the contents depend on the local stores.</p>
+<h3 id="other-cert">Other Cert</h3>
+<p><img alt="CertMan Other Cert tab with the certificate list and certificate actions." src="../more_images/cert_man_dlg_5.png" /></p>
+<p><em>Figure 2. The Other Cert list shows subject DN, expiration date, and issuer DN.</em></p>
+<p>This tab is for certificates kept outside the End Entity store, such as certificates that you need to inspect or use without managing an associated private key here. The key-type filter can narrow the list by algorithm. Select a row to use <strong>View Cert</strong>, <strong>Decode Cert</strong>, <strong>View PubKey</strong>, <strong>Export Cert</strong>, <strong>Run Verify</strong>, or <strong>Run Encrypt</strong>. <strong>Add Cert</strong> imports a certificate into this store, and <strong>Remove Cert</strong> removes the selected entry. A row's context menu provides additional actions.</p>
+<h3 id="ca">CA</h3>
+<p><img alt="CertMan CA tab listing CA certificates." src="../more_images/cert_man_dlg_4.png" /></p>
+<p><em>Figure 3. CA certificates are listed by subject DN, expiration date, and issuer DN.</em></p>
+<p>Use this tab to maintain intermediate or other CA certificates used by certificate-path workflows. The path field identifies the configured CA store, and the key-type filter narrows the displayed list. <strong>Add CA</strong> imports a CA certificate; <strong>Remove CA</strong> removes the selected one. <strong>View CA</strong> opens its certificate details, <strong>Decode CA</strong> sends its encoded data to the decoder, <strong>View PubKey</strong> displays the public key, and <strong>Export CA</strong> saves the certificate to a file. These actions manage the CA store; they do not themselves assert that a chain is trusted or valid.</p>
+<h3 id="crl">CRL</h3>
+<p><img alt="CertMan CRL tab showing issuer and update dates." src="../more_images/cert_man_dlg_3.png" /></p>
+<p><em>Figure 4. The CRL list displays each issuer and its This Update and Next Update dates.</em></p>
+<p>The CRL tab manages Certificate Revocation Lists. The list's update fields help you identify the CRL's stated validity period and freshness. Use <strong>Add CRL</strong> to import a list, <strong>View CRL</strong> to inspect its information, <strong>Decode CRL</strong> to examine its encoded structure, and <strong>Export CRL</strong> or <strong>Remove CRL</strong> to save or remove the selected item. Check the issuer and update dates when choosing a CRL; the dates alone do not establish that it is current or applicable to a particular certificate.</p>
+<h3 id="trust-rootca">Trust RootCA</h3>
+<p><img alt="CertMan Trust RootCA tab with trusted root certificates and trust-store actions." src="../more_images/cert_man_dlg_2.png" /></p>
+<p><em>Figure 5. The trust list shows a local name, subject DN, and expiration date for each root certificate.</em></p>
+<p>This tab manages root certificates in the configured trust store. Select an entry to <strong>View Trust</strong>, <strong>View PubKey</strong>, <strong>Decode Trust</strong>, or <strong>Export Trust</strong>. <strong>Add Trust</strong> adds a certificate to the store, and <strong>Remove Trust</strong> removes the selected entry. <strong>Load System Trust</strong> imports certificates available from the operating system's trust store. Adding a certificate here changes the local trust configuration; only add roots you intend to trust.</p>
+<h3 id="tools-private-keys-and-pfx-files">Tools: private keys and PFX files</h3>
+<p><img alt="CertMan Tools tab for private-key and PFX operations." src="../more_images/cert_man_dlg_1.png" /></p>
+<p><em>Figure 6. The Tools tab accepts a private-key file, a certificate, or a PFX file.</em></p>
+<p>The Tools tab provides a file-based workflow that is separate from selecting an existing End Entity entry:</p>
+<ul>
+<li>Use <strong>Find</strong> beside <strong>EncPrivateKey</strong>, <strong>Certificate</strong>, or <strong>PFX</strong> to choose an input file. The small <strong>V</strong>, <strong>C</strong>, and <strong>D</strong> controls beside key and certificate inputs provide view, clear, and decode actions; PFX provides clear and decode controls.</li>
+<li>Enable <strong>Encrypted PrivateKey</strong> and enter the private-key password when the selected key file is encrypted. The status line at the bottom reports the key encryption state when known.</li>
+<li>Choose a PFX encryption mode and provide a PFX password for PFX creation or extraction as required.</li>
+<li><strong>Check KeyPair</strong> checks whether the selected private key matches the public key in the selected certificate. <strong>View PubKey</strong> and <strong>Decode PriKeyInfo</strong> help inspect the key material. <strong>Get Random</strong> generates random data for the workflow.</li>
+<li><strong>Encrypt PFX</strong> packages the selected key and certificate into a PFX file. <strong>Decrypt PFX</strong> extracts material from a selected PFX. <strong>Save PFX to EE</strong> imports the PFX contents into End Entity storage.</li>
+</ul>
+<p>Use <strong>Clear</strong> to remove an input from the corresponding field before choosing another file. Treat private keys and PFX files as sensitive material, and protect exported files and passwords accordingly.</p>
 <h2 id="end-entity-screen-areas">End Entity Screen Areas</h2>
 <ol>
 <li><strong>Certificate Path</strong> — Shows the configured End Entity certificate storage folder. The filter can show all entries or narrow the list by key algorithm.</li>
@@ -2290,6 +2441,7 @@
 <li><strong>Delete Cert</strong> — Remove the selected end-entity entry.</li>
 <li><strong>OK / Close</strong> — <strong>OK</strong> confirms a selection when CertMan is opened in a selection mode. <strong>Close</strong> dismisses the dialog.</li>
 </ol>
+<p>The key-type filter can be used to narrow entries to algorithms such as RSA, ECDSA, DSA, SM2, or EdDSA; post-quantum key types may also appear when enabled by the caller. The <strong>ALL</strong> choice shows entries without an algorithm filter. The certificate table can be sorted by its displayed columns, which is useful when locating a subject or checking expiration and issuer information.</p>
 <h2 id="manage-certificates-and-revocation-data">Manage Certificates and Revocation Data</h2>
 <ol>
 <li>Choose the relevant tab: <strong>End Entity</strong>, <strong>Other Cert</strong>, <strong>CA</strong>, <strong>CRL</strong>, or <strong>Trust RootCA</strong>.</li>
