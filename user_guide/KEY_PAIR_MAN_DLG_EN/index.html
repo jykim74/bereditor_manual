@@ -1392,6 +1392,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Use the Tools Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools-tab-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools tab layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2211,6 +2228,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Use the Tools Tab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tools-tab-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tools tab layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2275,6 +2309,20 @@
 <li>Select <strong>Save to List</strong> to add the pair to KeyPairMan.</li>
 <li>To protect or unlock a private key, provide an encrypted private-key file or key, choose an encryption mode and password, then use <strong>Encrypt PrivateKey</strong> or <strong>Decrypt PrivateKey</strong>.</li>
 </ol>
+<h3 id="tools-tab-layout">Tools tab layout</h3>
+<p><img alt="KeyPairMan Tools tab with private/public key inputs, key-pair check, CSR controls, and private-key encryption tools." src="../../more_images/key_pair_man_dlg_1.png" /></p>
+<p><em>Figure 2. The Tools tab groups key-pair operations, CSR handling, and private-key encryption in one workspace.</em></p>
+<p>The <strong>Private Key</strong> and <strong>Public Key</strong> rows each have a <strong>Find</strong> button and compact controls: <strong>C</strong> clears the selected path, <strong>V</strong> opens a view of the key, <strong>D</strong> decodes its contents in BerEditor, and <strong>T</strong> identifies the key type. Use <strong>Check KeyPair</strong> after selecting both inputs to check that the public and private components correspond. <strong>Save to List</strong> stores the pair in KeyPairMan, while <strong>Make CSR</strong> creates a certificate signing request from the private key.</p>
+<p>The lower fields support related files and operations:</p>
+<ul>
+<li><strong>Enc PriKey</strong> accepts an encrypted private-key file. Use <strong>Find</strong> to select it, <strong>C</strong> to clear the path, and <strong>D</strong> to decode it.</li>
+<li><strong>PriKey Info</strong> is for private-key information data; its <strong>C</strong> and <strong>D</strong> controls clear or decode the specified file.</li>
+<li><strong>CSR</strong> displays the CSR path. <strong>View</strong> opens it for inspection, while <strong>C</strong> and <strong>D</strong> clear or decode it.</li>
+<li><strong>Password</strong> is used with the selected encryption mode for private-key encryption or decryption. <strong>Encrypt PrivateKey</strong> writes an encrypted key, and <strong>Decrypt PrivateKey</strong> processes an encrypted key using the supplied password.</li>
+<li><strong>Save as DER</strong> selects DER output for supported save/export operations. Leave it unchecked for the other supported output format.</li>
+<li><strong>Clear All</strong> clears the Tools tab inputs so you can start another operation.</li>
+</ul>
+<p>The warning at the bottom of the dialog states that private keys stored in KeyPairMan are not encrypted for testing purposes. The password and encryption controls here apply to file-based operations; they do not change that storage behavior. Restrict access to the key-pair directory and use the encryption controls when you need to protect private-key files.</p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li>The dialog displays a notice that private keys in KeyPairMan are not encrypted for testing purposes. Protect the storage directory and exported key files accordingly.</li>
