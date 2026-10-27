@@ -35,7 +35,7 @@ Some data-view tabs and the Log tab may be unavailable depending on license stat
 | **Help** | Configure settings; clear or pause logging; open PKI content, license information, support links, and About information. |
 | **View** | Configure which toolbar actions are shown and restore the default view configuration. |
 
-For the full command list and shortcuts, see [Menu Guide](MENU_EN.md).
+For the full command list and shortcuts, see [Menu Guide](/user_guide/menu.md).
 
 ## Typical Workflow
 
