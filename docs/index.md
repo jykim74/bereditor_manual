@@ -76,8 +76,7 @@ The project page lists installers or packages for Windows 64-bit, macOS, and Lin
 - [BerEditor 2.9.6 for macOS](https://jykim74.github.io/dmg/BerEditorV296.dmg)
 - [BerEditor 2.9.6 for Linux 64-bit](https://jykim74.github.io/zip/BerEditorV296.zip)
 
-The project page describes the download size as approximately 29 MB; actual size may vary by platform and release. Check the project page for newer releases.
+The project page describes the download size as approximately 35 MB; actual size may vary by platform and release. Check the project page for newer releases.
 
-For questions or bug reports, the project page directs users to the [BerEditor Google Group](https://groups.google.com/g/bereditor). It also links to the [BerEditor manual pages](https://jykim74.tistory.com/category/Manual/BerEditor), which are primarily in Korean and can be viewed with translation support.
 
 [![bereditor](https://myhits.vercel.app/api/hit/https%3A%2F%2Fjykim74.github.io%2Fbereditor_manual?color=green&label=bereditor&size=small)](https://myhits.vercel.app)
