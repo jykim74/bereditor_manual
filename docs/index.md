@@ -80,10 +80,4 @@ The project page describes the download size as approximately 29 MB; actual size
 
 For questions or bug reports, the project page directs users to the [BerEditor Google Group](https://groups.google.com/g/bereditor). It also links to the [BerEditor manual pages](https://jykim74.tistory.com/category/Manual/BerEditor), which are primarily in Korean and can be viewed with translation support.
 
-## Related links
-
-- [BerEditor project page](https://jykim74.github.io/)
-- [BerEditor Google Group](https://groups.google.com/g/bereditor)
-- [BerEditor manual pages](https://jykim74.tistory.com/category/Manual/BerEditor)
-
 [![bereditor](https://myhits.vercel.app/api/hit/https%3A%2F%2Fjykim74.github.io%2Fbereditor_manual?color=green&label=bereditor&size=small)](https://myhits.vercel.app)
