@@ -70,11 +70,11 @@ The project page identifies the following as available in both licensed and unli
 
 ## Platforms, downloads, and support
 
-The project page lists installers or packages for Windows 64-bit, macOS, and Linux 64-bit. The links below are the version 2.9.6 downloads listed on that page:
+The project page lists installers or packages for Windows 64-bit, macOS, and Linux 64-bit. The links below are the version 2.9.8 downloads listed on that page:
 
-- [BerEditor 2.9.6 for Windows 64-bit](https://jykim74.github.io/msi/BerEditor-enV296.msi)
-- [BerEditor 2.9.6 for macOS](https://jykim74.github.io/dmg/BerEditorV296.dmg)
-- [BerEditor 2.9.6 for Linux 64-bit](https://jykim74.github.io/zip/BerEditorV296.zip)
+- [BerEditor 2.9.8 for Windows 64-bit](https://jykim74.github.io/msi/BerEditor-enV298.msi)
+- [BerEditor 2.9.8 for macOS](https://jykim74.github.io/dmg/BerEditorV298.dmg)
+- [BerEditor 2.9.8 for Linux 64-bit](https://jykim74.github.io/zip/BerEditorV298.zip)
 
 The project page describes the download size as approximately 35 MB; actual size may vary by platform and release. Check the project page for newer releases.
 
