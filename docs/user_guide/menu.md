@@ -9,10 +9,10 @@
 | Open... | Opens a BER file. |
 | [Open Certificate](CERT_INFO_DLG_EN.md) | Opens a certificate file. |
 | [Open CRL](CRL_INFO_DLG_EN.md) | Opens a certificate revocation list (CRL) file. |
-| [Open CSR](KEY_PAIR_MAN_DLG_EN.md) | Opens a certificate signing request (CSR) file. |
+| [Open CSR](CSR_INFO_DLG_EN.md) | Opens a certificate signing request (CSR) file. |
 | Open PrivateKey | Opens a private key file. |
 | Open PublicKey | Opens a public key file. |
-| [Open CMS](PKCS7_DLG_EN.md) | Opens a CMS file. |
+| [Open CMS](CMS_INFO_DLG_EN.md) | Opens a CMS file. |
 | Save / Save As... | Saves the current data or saves it under another name. |
 | Recent Files | Reopens a recently used file. Up to 10 entries are maintained. |
 | Print / Print Preview | Prints the current content or previews it before printing. |
