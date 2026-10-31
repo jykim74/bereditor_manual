@@ -9,6 +9,8 @@ theme:
   analytics:
     gtag: G-287S0CKBNS
   logo: assets/bereditor.png
+  palette:
+    primary: green
 
 nav:
  - Home: index.md

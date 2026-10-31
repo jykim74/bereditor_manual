@@ -64,19 +64,5 @@ Open a TTLV message with the TTLV decoder or use the KMIP client/encoder workflo
 
 Open a certificate, CSR, CRL, or key in the corresponding BerEditor workflow. Use the dedicated information dialogs for its fields, OID Information for identifiers, Certificate Path Validation for a chain-validation task, and X.509 Compare to compare certificates. Use signing, verification, encryption, or decryption tools when the task requires those operations.
 
-## Licensing
-
-The project page identifies the following as available in both licensed and unlicensed editions: BER/DER viewing, data encoding, the numeric converter, and OID information. It lists XML, text, and log tabs; cryptographic menu functions; BER editing; SSL Check; Certificate Path Validation; KMIP TTLV; X.509 Compare; and the ACME client as licensed-edition features. Exact feature availability should be confirmed against the version and license in use.
-
-## Platforms, downloads, and support
-
-The project page lists installers or packages for Windows 64-bit, macOS, and Linux 64-bit. The links below are the version 2.9.8 downloads listed on that page:
-
-- [BerEditor 2.9.8 for Windows 64-bit](https://jykim74.github.io/msi/BerEditor-enV298.msi)
-- [BerEditor 2.9.8 for macOS](https://jykim74.github.io/dmg/BerEditorV298.dmg)
-- [BerEditor 2.9.8 for Linux 64-bit](https://jykim74.github.io/zip/BerEditorV298.zip)
-
-The project page describes the download size as approximately 35 MB; actual size may vary by platform and release. Check the project page for newer releases.
-
 
 [![bereditor](https://myhits.vercel.app/api/hit/https%3A%2F%2Fjykim74.github.io%2Fbereditor_manual?color=green&label=bereditor&size=small)](https://myhits.vercel.app)
