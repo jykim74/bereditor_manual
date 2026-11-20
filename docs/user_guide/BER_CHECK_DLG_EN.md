@@ -1,3 +1,8 @@
+---
+title: "BER Format Check Dialog Guide"
+description: "BerEditor's BER format check dialog checks whether BER-encoded data matches a supported PKI format."
+---
+
 # BER Format Check Dialog Guide
 
 The **BER format check** dialog checks whether BER-encoded data matches a supported PKI format. It can identify a format, validate a selected format, open format-specific details, or decode the data in the main BerEditor window. Open it from **Tool > Check BER**.

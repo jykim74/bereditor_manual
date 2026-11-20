@@ -1,3 +1,8 @@
+---
+title: "Make BER Dialog Guide"
+description: "BerEditor's Make BER dialog builds a BER-encoded value from a tag and value."
+---
+
 # Make BER Dialog Guide
 
 The **Make BER** dialog builds a BER-encoded value from a tag and value. Open it from **Tool > Make BER**.

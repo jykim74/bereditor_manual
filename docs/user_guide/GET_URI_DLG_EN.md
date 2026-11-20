@@ -1,3 +1,8 @@
+---
+title: "Get BER from URI Dialog Guide"
+description: "BerEditor's Get BER from URI dialog retrieves BER-encoded data from an HTTP(S) or LDAP address and loads the result into the main BerEditor window for decoding."
+---
+
 # Get BER from URI Dialog Guide
 
 The **Get BER from URI** dialog retrieves BER-encoded data from an HTTP(S) or LDAP address and loads the result into the main BerEditor window for decoding. Open it from **Tool > Get BER from URI**.

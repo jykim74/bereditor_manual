@@ -1,3 +1,8 @@
+---
+title: "EST Client Dialog Guide"
+description: "BerEditor's EST Client communicates with an Enrollment over Secure Transport (EST) server to retrieve CA certificates and prepare certificate enrollment requests."
+---
+
 # EST Client Dialog Guide
 
 The **EST Client** communicates with an Enrollment over Secure Transport (EST) server to retrieve CA certificates and prepare certificate enrollment requests.

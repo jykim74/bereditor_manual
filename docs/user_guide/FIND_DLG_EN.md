@@ -1,3 +1,8 @@
+---
+title: "Find in BER or TTLV Data"
+description: "BerEditor's Find dialog searches the currently open BER or TTLV structure for a value."
+---
+
 # Find in BER or TTLV Data
 
 The **Find** dialog searches the currently open BER or TTLV structure for a value. BerEditor enables the matching tab based on the format currently open in the main window.

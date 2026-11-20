@@ -1,3 +1,8 @@
+---
+title: "VID Dialog Guide"
+description: "BerEditor's VID dialog creates and verifies a VID (Virtual ID) using an identity value, a random value, and a selected hash algorithm."
+---
+
 # VID Dialog Guide
 
 The **VID** dialog creates and verifies a VID (Virtual ID) using an identity value, a random value, and a selected hash algorithm. It also displays the associated hash content for inspection.

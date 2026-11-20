@@ -1,3 +1,8 @@
+---
+title: "PDF Signer Dialog Guide"
+description: "Sign, verify, encrypt, and decrypt PDF files, and add timestamps using BerEditor."
+---
+
 # PDF Signer Dialog Guide
 
 The **PDF Signer** signs and verifies PDF documents, adds document security and timestamp information, builds certificate paths, and encrypts or decrypts PDF files.

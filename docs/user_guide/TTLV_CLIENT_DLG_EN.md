@@ -1,3 +1,8 @@
+---
+title: "TTLV Client"
+description: "BerEditor's TTLV Client sends a hexadecimal KMIP TTLV request to a server and displays the hexadecimal response."
+---
+
 # TTLV Client
 
 The **TTLV Client** sends a hexadecimal KMIP TTLV request to a server and displays the hexadecimal response.

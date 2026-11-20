@@ -1,3 +1,8 @@
+---
+title: "Certificate Information"
+description: "Inspect X.509 certificate fields and extensions, check certificate paths and status, and export certificates in BerEditor."
+---
+
 # Certificate Information
 
 The **Certificate Information** dialog displays the fields and extensions in an X.509 certificate, provides certificate path and status checks, and offers certificate export and management actions.

@@ -1,3 +1,8 @@
+---
+title: "Install BerEditor on Linux"
+description: "Install and launch BerEditor on Linux from the ZIP archive using the terminal."
+---
+
 # Install BerEditor on Linux
 
 The Linux download is a ZIP archive. The screenshot below shows the terminal commands used to extract the archive and start BerEditor.

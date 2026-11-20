@@ -1,3 +1,8 @@
+---
+title: "CMS Information Dialog Guide"
+description: "BerEditor's CMS Information dialog displays the structure and contents of a Cryptographic Message Syntax (CMS) or PKCS#7 object."
+---
+
 # CMS Information Dialog Guide
 
 The **CMS Information** dialog displays the structure and contents of a Cryptographic Message Syntax (CMS) or PKCS#7 object. Depending on the message type, it can show data, certificates, CRLs, signer details, and recipient details.

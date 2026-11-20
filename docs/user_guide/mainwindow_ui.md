@@ -1,3 +1,8 @@
+---
+title: "BerEditor Main Window UI Guide"
+description: "Explore the BerEditor main window, including the BER tree, data views, menus, and navigation controls."
+---
+
 # BerEditor Main Window UI Guide
 
 

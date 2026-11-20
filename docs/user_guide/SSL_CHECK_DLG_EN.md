@@ -1,3 +1,8 @@
+---
+title: "SSL Check Dialog Guide"
+description: "BerEditor's SSL Check dialog connects to an HTTPS server and reports TLS, certificate, and trust information."
+---
+
 # SSL Check Dialog Guide
 
 The **SSL Check** dialog connects to an HTTPS server and reports TLS, certificate, and trust information. It can also test servers that require mutual TLS client authentication.

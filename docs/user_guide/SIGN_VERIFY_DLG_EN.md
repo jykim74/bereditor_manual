@@ -1,3 +1,8 @@
+---
+title: "Signature / Verify Dialog Guide"
+description: "BerEditor's Signature / Verify dialog creates or verifies an asymmetric digital signature using input data or a file."
+---
+
 # Signature / Verify Dialog Guide
 
 The **Signature / Verify** dialog creates or verifies an asymmetric digital signature using input data or a file. Open it from **Cryptography > Sign/Verify**.

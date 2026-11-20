@@ -1,3 +1,8 @@
+---
+title: "Message Authentication Code (MAC) Dialog Guide"
+description: "BerEditor's Message Authentication Code dialog generates or verifies a MAC over text or file data."
+---
+
 # Message Authentication Code (MAC) Dialog Guide
 
 The **Message Authentication Code** dialog generates or verifies a MAC over text or file data. Open it from **Cryptography > Message Authentication Code**.

@@ -1,3 +1,8 @@
+---
+title: "Shamir Secret Sharing Dialog Guide"
+description: "BerEditor's Shamir Secret Sharing [GF(256)] dialog splits a secret into shares and reconstructs it from a threshold number of shares."
+---
+
 # Shamir Secret Sharing Dialog Guide
 
 The **Shamir Secret Sharing [GF(256)]** dialog splits a secret into shares and reconstructs it from a threshold number of shares. Use the same prime value and threshold settings when splitting and joining.

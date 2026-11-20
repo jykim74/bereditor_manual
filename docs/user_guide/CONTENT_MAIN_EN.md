@@ -1,3 +1,8 @@
+---
+title: "Content Help"
+description: "BerEditor's Content Help window provides ASN.1 and PKI reference material, RFC documents, and managed web links."
+---
+
 # Content Help
 
 The **Content Help** window provides ASN.1 and PKI reference material, RFC documents, and managed web links. Select an item in the information tree to display its content.

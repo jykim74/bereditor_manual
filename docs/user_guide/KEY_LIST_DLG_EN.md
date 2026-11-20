@@ -1,3 +1,8 @@
+---
+title: "KeyList Dialog Guide"
+description: "BerEditor's Symmetric Key List dialog stores and selects symmetric keys used by BerEditor's encryption, decryption, and MAC tools."
+---
+
 # KeyList Dialog Guide
 
 The **Symmetric Key List** dialog stores and selects symmetric keys used by BerEditor's encryption, decryption, and MAC tools. The list displays each key's name, algorithm, length, IV availability, and last-modified time.

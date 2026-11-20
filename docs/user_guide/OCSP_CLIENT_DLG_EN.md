@@ -1,3 +1,8 @@
+---
+title: "OCSP Client Dialog Guide"
+description: "BerEditor's OCSP Client creates an Online Certificate Status Protocol request, sends it to a responder, and verifies the returned response."
+---
+
 # OCSP Client Dialog Guide
 
 The **OCSP Client** creates an Online Certificate Status Protocol request, sends it to a responder, and verifies the returned response. It can include a nonce and optionally sign the request.

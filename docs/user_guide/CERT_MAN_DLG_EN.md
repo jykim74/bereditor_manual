@@ -1,3 +1,8 @@
+---
+title: "CertMan Dialog Guide"
+description: "BerEditor's Certificate Management dialog organizes certificates, private keys, certificate authorities, CRLs, and trusted root CAs."
+---
+
 # CertMan Dialog Guide
 
 The **Certificate Management** dialog organizes certificates, private keys, certificate authorities, CRLs, and trusted root CAs. It also provides common certificate and key operations. The available tabs and actions depend on the selected management mode.

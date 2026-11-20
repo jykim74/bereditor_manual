@@ -1,3 +1,8 @@
+---
+title: "BerEditor Menu Guide"
+description: "Browse the BerEditor menu reference for file operations, BER and TTLV tools, cryptography, protocols, and settings."
+---
+
 # BerEditor Menu Guide
 
 

@@ -1,3 +1,8 @@
+---
+title: "Hash Dialog Guide"
+description: "BerEditor's Hash dialog calculates a digest for text or a file."
+---
+
 # Hash Dialog Guide
 
 The **Hash** dialog calculates a digest for text or a file. Open it from **Cryptography > Hash**.

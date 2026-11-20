@@ -1,3 +1,8 @@
+---
+title: "Encrypt / Decrypt Dialog Guide"
+description: "BerEditor's Encrypt / Decrypt dialog performs symmetric encryption or decryption on entered data or a file."
+---
+
 # Encrypt / Decrypt Dialog Guide
 
 The **Encrypt / Decrypt** dialog performs symmetric encryption or decryption on entered data or a file. Open it from **Cryptography > Encrypt/Decrypt**.

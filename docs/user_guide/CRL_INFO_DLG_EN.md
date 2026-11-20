@@ -1,3 +1,8 @@
+---
+title: "CRL Information"
+description: "BerEditor's CRL Information dialog displays the metadata and revoked-certificate entries in an X.509 Certificate Revocation List (CRL)."
+---
+
 # CRL Information
 
 The **CRL Information** dialog displays the metadata and revoked-certificate entries in an X.509 Certificate Revocation List (CRL). It also provides signature verification, decoding, export, and CertMan actions.

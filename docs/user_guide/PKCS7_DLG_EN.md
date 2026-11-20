@@ -1,3 +1,8 @@
+---
+title: "PKCS7 Dialog Guide"
+description: "BerEditor's PKCS7 dialog creates and processes PKCS#7/CMS messages."
+---
+
 # PKCS7 Dialog Guide
 
 The **PKCS7** dialog creates and processes PKCS#7/CMS messages. It supports data and digest containers, signing and signature verification, and enveloped-data encryption and decryption.

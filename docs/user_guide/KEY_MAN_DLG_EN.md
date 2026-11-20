@@ -1,3 +1,8 @@
+---
+title: "Key Management Dialog Guide"
+description: "BerEditor's Key Management dialog provides three tools: key derivation, symmetric key wrapping/unwrapping, and key encapsulation."
+---
+
 # Key Management Dialog Guide
 
 The **Key Management** dialog provides three tools: key derivation, symmetric key wrapping/unwrapping, and key encapsulation. Open it from **Cryptography > Key Manage**.

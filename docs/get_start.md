@@ -1,3 +1,8 @@
+---
+title: "Viewing ASN.1 BER/DER Data with BerEditor"
+description: "Learn how to open and inspect ASN.1 BER/DER, PEM, and Base64 data in BerEditor using files, direct input, drag and drop, or a URI."
+---
+
 # Viewing ASN.1 BER/DER Data with BerEditor
 
 BerEditor can decode ASN.1 data encoded with BER or DER and display its structure and values. This is useful when examining X.509 certificates, certificate revocation lists (CRLs), private keys, and other ASN.1-based data.

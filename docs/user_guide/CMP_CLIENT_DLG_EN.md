@@ -1,3 +1,8 @@
+---
+title: "CMP Client Dialog Guide"
+description: "BerEditor's CMP Client creates and sends Certificate Management Protocol requests for certificate enrollment and management."
+---
+
 # CMP Client Dialog Guide
 
 The **CMP Client** creates and sends Certificate Management Protocol requests for certificate enrollment and management. It supports request types including initial request, certification request, key update, revocation, and general messages.

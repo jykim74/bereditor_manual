@@ -1,3 +1,8 @@
+---
+title: "SCEP Client Dialog Guide"
+description: "BerEditor's SCEP Client creates and sends Simple Certificate Enrollment Protocol requests to a CA."
+---
+
 # SCEP Client Dialog Guide
 
 The **SCEP Client** creates and sends Simple Certificate Enrollment Protocol requests to a CA. It supports certificate **Issue**, **Update**, and **GetCRL** operations, plus retrieval of the CA certificate.

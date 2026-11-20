@@ -1,3 +1,8 @@
+---
+title: "CAVP Dialog Guide"
+description: "BerEditor's CAVP dialog processes cryptographic algorithm test-vector request files and writes response files."
+---
+
 # CAVP Dialog Guide
 
 The **CAVP** dialog processes cryptographic algorithm test-vector request files and writes response files. It includes symmetric and asymmetric algorithms, hash and MAC tests, Monte Carlo tests, DRBG, PBKDF, and ACVP JSON utilities.

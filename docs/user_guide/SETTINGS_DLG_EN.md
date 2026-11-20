@@ -1,3 +1,8 @@
+---
+title: "Settings"
+description: "BerEditor's Settings dialog controls BerEditor display, parsing, language, and file-related preferences."
+---
+
 # Settings
 
 The **Settings** dialog controls BerEditor display, parsing, language, and file-related preferences. Some advanced options are available only in the licensed version.

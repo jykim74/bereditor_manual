@@ -1,3 +1,8 @@
+---
+title: "Decode BER Dialog Guide"
+description: "BerEditor's Decode BER dialog converts BER data entered as text into bytes and loads it into BerEditor for decoding."
+---
+
 # Decode BER Dialog Guide
 
 The **Decode BER** dialog converts BER data entered as text into bytes and loads it into BerEditor for decoding. Open it from **Tool > Decode BER**.

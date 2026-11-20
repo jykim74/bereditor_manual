@@ -1,3 +1,8 @@
+---
+title: "KeyPairMan Dialog Guide"
+description: "BerEditor's Key Pair Management dialog stores, selects, inspects, and uses asymmetric key pairs in BerEditor's KeyPairMan."
+---
+
 # KeyPairMan Dialog Guide
 
 The **Key Pair Management** dialog stores, selects, inspects, and uses asymmetric key pairs in BerEditor's KeyPairMan. A key pair is shown with its algorithm, parameter set, and modification time.

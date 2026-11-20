@@ -1,3 +1,8 @@
+---
+title: "Make Private Key Dialog Guide"
+description: "BerEditor's Make Private Key dialog generates asymmetric key pairs and displays their components."
+---
+
 # Make Private Key Dialog Guide
 
 The **Make Private Key** dialog generates asymmetric key pairs and displays their components. It supports RSA, ECC, DSA, and raw-key algorithms, including EdDSA and post-quantum ML-KEM, ML-DSA, and SLH-DSA.

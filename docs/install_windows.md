@@ -1,3 +1,8 @@
+---
+title: "Install BerEditor on Windows"
+description: "Install BerEditor on Windows with the setup wizard and learn how to launch the application."
+---
+
 # Install BerEditor on Windows
 
 The Windows installer uses a setup wizard. The screenshots below show the installation flow for BerEditor 2.9.6.

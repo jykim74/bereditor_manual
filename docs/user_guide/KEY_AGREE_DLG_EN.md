@@ -1,3 +1,8 @@
+---
+title: "Key Agreement Dialog Guide"
+description: "BerEditor's Key Agreement dialog calculates a shared secret using Diffie–Hellman (DH) or Elliptic Curve Diffie–Hellman (ECDH)."
+---
+
 # Key Agreement Dialog Guide
 
 The **Key Agreement** dialog calculates a shared secret using Diffie–Hellman (DH) or Elliptic Curve Diffie–Hellman (ECDH). It can also generate the parameters and key material used in the calculation.

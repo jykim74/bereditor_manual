@@ -1,3 +1,8 @@
+---
+title: "BN Calculator Dialog Guide"
+description: "BerEditor's BN Calculator performs arbitrary-precision integer and finite-field calculations."
+---
+
 # BN Calculator Dialog Guide
 
 The **BN Calculator** performs arbitrary-precision integer and finite-field calculations. Choose a numeric representation and a base group, enter values in **A**, **B**, and, when needed, **M**, then select an operation.

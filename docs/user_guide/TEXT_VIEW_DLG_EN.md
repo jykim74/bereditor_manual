@@ -1,3 +1,8 @@
+---
+title: "Text View Dialog Guide"
+description: "BerEditor's Text View dialog presents decoded BER or KMIP TTLV data as an indented text listing, or shows its hexadecimal values."
+---
+
 # Text View Dialog Guide
 
 The **Text View** dialog presents decoded BER or KMIP TTLV data as an indented text listing, or shows its hexadecimal values. Open it from **Tool > Text View**.

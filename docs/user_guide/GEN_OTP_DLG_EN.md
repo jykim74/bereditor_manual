@@ -1,3 +1,8 @@
+---
+title: "OTP Generator Dialog Guide"
+description: "BerEditor's OTP Generator creates a time-based one-time password (OTP) from a symmetric key, a selected time, a hash algorithm, and a time interval."
+---
+
 # OTP Generator Dialog Guide
 
 The **OTP Generator** creates a time-based one-time password (OTP) from a symmetric key, a selected time, a hash algorithm, and a time interval.

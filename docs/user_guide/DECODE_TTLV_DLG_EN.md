@@ -1,3 +1,8 @@
+---
+title: "Decode TTLV"
+description: "BerEditor's Decode TTLV dialog converts a TTLV message from hexadecimal or Base64 text and opens the decoded structure in BerEditor."
+---
+
 # Decode TTLV
 
 The **Decode TTLV** dialog converts a TTLV message from hexadecimal or Base64 text and opens the decoded structure in BerEditor.

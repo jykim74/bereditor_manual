@@ -1,3 +1,8 @@
+---
+title: "Certificate Path Validation Dialog Guide"
+description: "Build and inspect certificate chains, validate certificates and policies, and verify CRLs with BerEditor."
+---
+
 # Certificate Path Validation Dialog Guide
 
 The **Certificate Path Validation** dialog helps build and inspect a certificate chain, validate a target certificate, check certificate policies, and verify CRLs. It can use certificates and CRLs selected from files or stored in BerEditor's CertMan lists.

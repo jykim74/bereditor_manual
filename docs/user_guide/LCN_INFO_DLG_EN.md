@@ -1,3 +1,8 @@
+---
+title: "License Information"
+description: "BerEditor's License Information dialog displays BerEditor's current license status and provides controls to request, load, update, or remove license information."
+---
+
 # License Information
 
 The **License Information** dialog displays BerEditor's current license status and provides controls to request, load, update, or remove license information.

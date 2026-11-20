@@ -1,3 +1,8 @@
+---
+title: "BerEditor Features by License Status"
+description: "Compare licensed and unlicensed BerEditor features, including BER editing, cryptographic tools, and KMIP TTLV functionality."
+---
+
 # BerEditor Features by License Status
 
 This page summarizes the feature differences between the unlicensed and licensed versions of BerEditor. It reflects the application menus and license checks in the source code; available actions can also vary by build and platform.

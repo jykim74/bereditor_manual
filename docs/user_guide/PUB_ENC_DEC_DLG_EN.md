@@ -1,3 +1,8 @@
+---
+title: "Public-Key Encrypt/Decrypt Dialog Guide"
+description: "BerEditor's Public-Key Encrypt/Decrypt dialog encrypts data with a public key and decrypts it with the matching private key."
+---
+
 # Public-Key Encrypt/Decrypt Dialog Guide
 
 The **Public-Key Encrypt/Decrypt** dialog encrypts data with a public key and decrypts it with the matching private key. It supports RSA, SM2, and ECDSA-based ECIES operations.

@@ -1,3 +1,8 @@
+---
+title: "TTLV Encoder"
+description: "BerEditor's TTLV Encoder creates a KMIP request by selecting an operation and filling its parameters."
+---
+
 # TTLV Encoder
 
 The **TTLV Encoder** creates a KMIP request by selecting an operation and filling its parameters. The output is a hexadecimal TTLV message.

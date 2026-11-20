@@ -1,3 +1,8 @@
+---
+title: "TSP Client Dialog Guide"
+description: "BerEditor's TSP Client creates Time-Stamp Protocol requests, sends them to a timestamp authority, and verifies the returned timestamp token and signature."
+---
+
 # TSP Client Dialog Guide
 
 The **TSP Client** creates Time-Stamp Protocol requests, sends them to a timestamp authority, and verifies the returned timestamp token and signature.

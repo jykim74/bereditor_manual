@@ -1,3 +1,8 @@
+---
+title: "Data Converter Dialog Guide"
+description: "BerEditor's Data Converter converts data between text and common encoded representations."
+---
+
 # Data Converter Dialog Guide
 
 The **Data Converter** converts data between text and common encoded representations. Open it from **Tool > Data Converter**.

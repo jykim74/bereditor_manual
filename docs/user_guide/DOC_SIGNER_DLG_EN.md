@@ -1,3 +1,8 @@
+---
+title: "Document Signer Dialog Guide"
+description: "BerEditor's Document Signer handles document signatures, verification, encryption, and data containers in CMS, JSON/JWS, and XML formats."
+---
+
 # Document Signer Dialog Guide
 
 The **Document Signer** handles document signatures, verification, encryption, and data containers in CMS, JSON/JWS, and XML formats. It can work with text in the dialog or read and write source and destination files.

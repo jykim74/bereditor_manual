@@ -1,3 +1,8 @@
+---
+title: "ACME Client Dialog Guide"
+description: "Use the BerEditor ACME client to manage accounts, create certificate orders, complete authorizations, and retrieve certificates."
+---
+
 # ACME Client Dialog Guide
 
 The **ACME Client** communicates with an ACME directory to manage an account, create certificate orders, complete authorizations, and retrieve issued certificates. It exposes individual ACME commands and a guided **Issue Certificate** workflow.

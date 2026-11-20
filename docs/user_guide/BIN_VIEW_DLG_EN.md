@@ -1,3 +1,8 @@
+---
+title: "Binary View Dialog Guide"
+description: "BerEditor's Binary View dialog displays binary data as Base64, a formatted hexadecimal dump, or a continuous hexadecimal value."
+---
+
 # Binary View Dialog Guide
 
 The **Binary View** dialog displays binary data as Base64, a formatted hexadecimal dump, or a continuous hexadecimal value. Open it from **Tool > Binary View**.

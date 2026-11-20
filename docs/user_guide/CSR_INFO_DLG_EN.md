@@ -1,3 +1,8 @@
+---
+title: "CSR Information Dialog Guide"
+description: "Inspect and verify certificate signing requests (CSRs), including subjects, public keys, extensions, and signatures in BerEditor."
+---
+
 # CSR Information Dialog Guide
 
 The **CSR Information** dialog displays the parsed fields of a certificate signing request (CSR), including its subject, public key, requested extensions, and signature information. It can also verify the CSR signature, decode the request in BerEditor, inspect the public key, and export the CSR.

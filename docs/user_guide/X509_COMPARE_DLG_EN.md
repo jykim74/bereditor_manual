@@ -1,3 +1,8 @@
+---
+title: "X.509 Compare"
+description: "BerEditor's X509 Compare dialog compares two X.509 objects and displays corresponding fields side by side."
+---
+
 # X.509 Compare
 
 The **X509 Compare** dialog compares two X.509 objects and displays corresponding fields side by side. It supports certificates, certificate revocation lists (CRLs), and certificate signing requests (CSRs).

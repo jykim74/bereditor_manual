@@ -1,3 +1,8 @@
+---
+title: "Number Converter Dialog Guide"
+description: "BerEditor's Number Converter converts a number between binary, decimal, and hexadecimal representations."
+---
+
 # Number Converter Dialog Guide
 
 The **Number Converter** converts a number between binary, decimal, and hexadecimal representations. Open it from **Tool > Num Converter**.

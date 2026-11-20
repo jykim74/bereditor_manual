@@ -1,3 +1,8 @@
+---
+title: "OID Information Dialog Guide"
+description: "BerEditor's OID Information dialog looks up Object Identifier (OID) details from an OID or one of its supported representations."
+---
+
 # OID Information Dialog Guide
 
 The **OID Information** dialog looks up Object Identifier (OID) details from an OID or one of its supported representations. Open it from **Tool > OID Information**.

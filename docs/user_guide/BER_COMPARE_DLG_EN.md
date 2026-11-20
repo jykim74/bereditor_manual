@@ -1,3 +1,8 @@
+---
+title: "BER Compare Dialog Guide"
+description: "BerEditor's BER Compare dialog compares two BER files by their encoded bytes and decoded tree structure."
+---
+
 # BER Compare Dialog Guide
 
 The **BER Compare** dialog compares two BER files by their encoded bytes and decoded tree structure. Open it from **Tool > BER Compare**.

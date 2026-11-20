@@ -1,3 +1,8 @@
+---
+title: "Install BerEditor on macOS"
+description: "Install BerEditor on macOS using the disk image and Applications folder."
+---
+
 # Install BerEditor on macOS
 
 1. Open the downloaded BerEditor disk image (`.dmg`). A window like the one below will appear.
