@@ -5,6 +5,7 @@ site_author: JayKim
 
 theme:
   name: material
+  favicon: assets/bereditor.png
   custom_dir: overrides
   analytics:
     gtag: G-287S0CKBNS
@@ -89,7 +90,7 @@ nav:
    - CSR Information: user_guide/CSR_INFO_DLG_EN.md
    - CMS Information: user_guide/CMS_INFO_DLG_EN.md
 
- - plugins:
+plugins:
    - search
    - blog
    - rss
