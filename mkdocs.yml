@@ -7,11 +7,14 @@ theme:
   name: material
   favicon: assets/bereditor.png
   custom_dir: overrides
-  analytics:
-    gtag: G-287S0CKBNS
   logo: assets/bereditor.png
   palette:
     primary: green
+
+extra:
+  analytics:
+    provider: google
+    property: G-RL3NFF6MPP
 
 nav:
  - Home: index.md
